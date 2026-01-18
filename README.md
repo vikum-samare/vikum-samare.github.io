@@ -1,20 +1,20 @@
-🙋🏻 Hello! I’m a passionate Software Engineer based in Singapore, dedicated to bringing innovation to the prop-tech sector. By day, I specialize in building seamless, user-focused platforms with TypeScript and React Native. Here on GitHub, I use this space to share experiments and side projects that reflect my curiosity and excitement for software—usually worked on during my free time.
+## 🙋🏻‍♂️ Hello, I’m Vikum
 
-🌏 I love exploring new technologies and travelling to discover new perspectives, constantly seeking creative ways to push my skills further. If you’d like to connect or chat about tech trends (or travel!), my LinkedIn and Stack Overflow profiles are linked below!
+I’m a product-focused Software Engineer based in Singapore, currently working at PropertyGuru Group. I spend most of my time building systems that are meant to ship, scale, and actually move the needle, not just look good on paper.
 
-**AI tools I vibe with:**
-- Perplexity AI (_research and deep dives_)
-- Claude (_coding, text corrections and refinements_)
-- GitHub Copilot _(rapid prototyping and code completion)_
-- ChatGPT _(brainstorming and basically anything else)_ 
+By day, I work across the stack with a strong focus on mobile and frontend, mainly using TypeScript and React Native. I care deeply about outcomes, clean architecture, and making trade-offs that make sense in real products.  
+By night (and weekends 😄), this GitHub space becomes my playground. You’ll find experiments, side projects, and ideas I explore purely out of curiosity and the joy of building.
 
+🌏 Outside of work, I enjoy exploring new technologies and traveling. Both help me reset my thinking and see problems from fresh angles. Different places, different perspectives, same curiosity.
 
-**Find me on:**<br/><br/>
-<a href="https://www.linkedin.com/in/vikum-samaranayake/" target="_blank">
-  <img src="https://img.icons8.com/fluent/48/000000/linkedin.png"/>
-</a>
-<a href="https://stackoverflow.com/users/14369686/vikum-samare" target="_blank">
-  <img src="https://img.icons8.com/color/48/000000/stackoverflow.png"/>
-</a>
+### 🧠 AI tools I vibe with
+- **Perplexity AI** – research and deep dives  
+- **Claude** – coding, rewrites, and thoughtful refinements  
+- **GitHub Copilot** – fast prototyping and staying in flow  
+- **ChatGPT** – brainstorming and connecting the dots  
 
+### 🔗 Find me on
+- [LinkedIn](https://www.linkedin.com/in/vikum-samaranayake/)
+- [Stack Overflow](https://stackoverflow.com/users/14369686/vikum-samare)
 
+_Portfolio website coming soon ✨_
