@@ -26,10 +26,6 @@ function ServiceCard({ service }: { readonly service: ServiceItem }) {
           <p className="text-text-secondary mt-2 leading-relaxed">
             {service.description}
           </p>
-          <p className="text-sm text-text-muted mt-4">
-            <span className="text-accent-primary font-medium">{service.projectCount}</span>{' '}
-            {service.projectLabel}
-          </p>
         </div>
         <div className="ml-4 text-accent-primary">
           <Icon width={24} height={24} />

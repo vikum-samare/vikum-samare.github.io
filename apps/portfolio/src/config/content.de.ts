@@ -35,8 +35,8 @@ export const deContent: SiteContent = {
     heading: 'Jedes großartige Design beginnt mit einer noch',
     headingAccent: 'besseren Geschichte',
     paragraphs: [
-      'Seit ich vor fast 8 Jahren meine Reise als freiberuflicher Designer begonnen habe, habe ich Remote-Arbeit für Agenturen geleistet, Startups beraten und mit talentierten Menschen zusammengearbeitet, um digitale Produkte für Geschäfts- und Verbraucheranwendungen zu erstellen.',
-      'Ich bin ruhig selbstbewusst, von Natur aus neugierig und arbeite ständig daran, meine Fähigkeiten zu verbessern - ein Designproblem nach dem anderen.',
+      "Ich gedeihe in produktbasierten Entwicklungskulturen mit ergebnisorientierten Arbeiten und spezialisiere mich auf Web-, Backend- und Mobile-Entwicklung, um wirkungsvolle Lösungen zu liefern.",
+      "Mit über 8 Jahren Erfahrung in den Bereichen Fintech, Food Tech und Immobilien-Marktplätzen in Singapur und Sri Lanka habe ich Entwicklungsteams geleitet, Microservices integriert und skalierbare Funktionen für Web-Banking-Apps, mobile Plattformen und digitale Bestellsysteme entwickelt. Von meinen Anfängen beim Erstellen von PHP-Websites bis zur Leitung von Mobile-Banking-Teams bei Maybank und der Entwicklung von Marktplatz-Produkten bei PropertyGuru habe ich konsequent Lösungen geliefert, die technische Exzellenz mit Geschäftsergebnissen verbinden."
     ],
   },
   resume: {
@@ -46,33 +46,48 @@ export const deContent: SiteContent = {
     sections: [
       {
         id: 'current',
-        label: '2022 - Heute',
+        label: '2021 - Heute',
         items: [
           {
-            id: 'exp-1',
+            id: 'exp-5',
             period: '2022 - Heute',
-            title: 'Senior Framer Entwickler',
-            organization: 'Freiberuflich',
-            description: 'Entwicklung hochwertiger Websites und Anwendungen mit Framer, Webflow und React',
+            title: 'Software-Ingenieur',
+            organization: 'PropertyGuru Group - Singapur',
+            description: 'Entwicklung von Marktplatz-Agentenprodukten mit Fokus auf Web- und Backend-Entwicklung. Entwicklung von Agentnet-Mobile-Funktionen in einer produktbasierten, ergebnisorientierten Entwicklungskultur.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software-Ingenieur / Lead-Entwickler',
+            organization: 'Maybank - Singapur',
+            description: 'Entwicklung von Funktionen für die Maybank Web-Banking-App. Leitung des Mobile-Banking-App-Entwicklungsteams und Koordination mit Offshore-Entwicklern zur termingerechten Produktlieferung.',
           },
         ],
       },
       {
         id: 'past',
-        label: '2018 - 2022',
+        label: '2015 - 2021',
         items: [
           {
-            id: 'exp-2',
-            period: '2020 - 2022',
-            title: 'UI/UX Designer',
-            organization: 'Creative Agency Co.',
-            description: 'Leitung des Designs für 20+ Kundenprojekte',
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software-Ingenieur',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Zusammenarbeit mit Incentivio, einem US-amerikanischen Food-Tech-Startup, zur Entwicklung und Bereitstellung webbasierter Funktionen für deren digitale Bestellplattform.'
           },
           {
-            id: 'exp-3',
-            period: '2018 - 2020',
-            title: 'Junior Webentwickler',
-            organization: 'TechStart Inc.',
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software-Ingenieur / Lead-Ingenieur',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Leitung von Mobile/Web-Entwicklungsteams, Integration von Microservices in Frontend-Produkte und Verwaltung des Noetic-Ingenieursteams.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software-Ingenieur / Associate Software-Ingenieur',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Arbeit an verschiedenen Webentwicklungsprojekten mit PHP, JavaScript und MySQL. Unterstützung bei der Entwicklung und Wartung von Kunden-Websites und internen Tools.',
           },
         ],
       },
@@ -82,16 +97,10 @@ export const deContent: SiteContent = {
         items: [
           {
             id: 'edu-1',
-            period: '2018 - 2022',
-            title: 'Bachelor in Design',
-            organization: 'California Institute of Arts',
-            description: 'Schwerpunkt auf UI/UX-Design und interaktive Medien',
-          },
-          {
-            id: 'edu-2',
-            period: '2016 - 2018',
-            title: 'Associate Degree in Webentwicklung',
-            organization: 'Los Angeles Community College',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Informatik',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'Meine akademische Reise schuf eine solide Grundlage in Software-Engineering, verteilten Systemen, Algorithmen und KI, während praktische Projekte meine Fähigkeit stärkten, Theorie auf reale, produktionsreife Systeme anzuwenden.',
           },
         ],
       },
@@ -104,25 +113,25 @@ export const deContent: SiteContent = {
     services: [
       {
         id: 'svc-1',
-        title: 'Website Design',
-        description: 'Ich erstelle digitale Produkte mit einzigartigen Ideen mit Figma & Framer',
-        projectCount: 24,
+        title: 'Frontend & Produktentwicklung',
+        description:
+          'Ich entwickle skalierbare, benutzerzentrierte Webanwendungen mit React, Next.js, Tailwind CSS und modernem State-Management. Meine Arbeit legt Wert auf klare Architektur, Performance und messbare Produktergebnisse statt nur visuelle Gestaltung.',
         projectLabel: 'PROJEKTE',
         icon: 'design',
       },
       {
         id: 'svc-2',
-        title: 'Entwicklung',
-        description: 'Ich bringe Websites live mit Framer, Webflow oder WordPress',
-        projectCount: 126,
+        title: 'Backend & Systemarchitektur',
+        description:
+          'Ich entwerfe und entwickle Backend-Systeme mit NestJS, MySQL, MongoDB, Redis und Python. Mein Fokus liegt auf wartbaren APIs, Datenintegrität und Architekturen, die in Produktionsumgebungen zuverlässig skalieren.',
         projectLabel: 'PROJEKTE',
         icon: 'code',
       },
       {
         id: 'svc-3',
-        title: 'SEO/Marketing',
-        description: 'Steigerung des Traffics für Ihre Website mit SEO-Optimierung',
-        projectCount: 8,
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'Ich entwickle plattformübergreifende mobile Apps mit React Native und verwalte containerisierte Deployments mit Docker. Ich richte CI-Pipelines mit GitHub Actions ein, setze Code-Qualität mit SonarQube und QLTY durch und deploye auf AWS, DigitalOcean und selbstgehosteter Infrastruktur.',
         projectLabel: 'PROJEKTE',
         icon: 'seo',
       },
@@ -262,5 +271,11 @@ export const deContent: SiteContent = {
     toggleTheme: 'Thema wechseln',
     lightMode: 'Zu hellem Modus wechseln',
     darkMode: 'Zu dunklem Modus wechseln',
+  },
+  notFound: {
+    title: 'Seite nicht gefunden',
+    heading: '404',
+    description: 'Hoppla! Die gesuchte Seite existiert nicht. Sie wurde möglicherweise verschoben oder gelöscht.',
+    homeButtonText: 'Zurück zur Startseite',
   },
 };

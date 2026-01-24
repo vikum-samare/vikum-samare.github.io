@@ -35,8 +35,8 @@ export const enContent: SiteContent = {
     heading: 'Every great design begin with an even',
     headingAccent: 'better story',
     paragraphs: [
-      "Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.",
-      "I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.",
+      "I thrive in product-based development cultures with outcome-focused work, specializing in web, backend, and mobile development to deliver impactful solutions.",
+      "With over 8 years of experience spanning fintech, food tech, and real estate marketplaces across Singapore and Sri Lanka, I've led development teams, integrated microservices, and built scalable features for web banking apps, mobile platforms, and digital ordering systems. From my early days building PHP websites to leading mobile banking teams at Maybank and developing marketplace products at PropertyGuru, I've consistently delivered solutions that bridge technical excellence with business outcomes."
     ],
   },
   resume: {
@@ -46,33 +46,48 @@ export const enContent: SiteContent = {
     sections: [
       {
         id: 'current',
-        label: '2022 - Present',
+        label: '2021 - Present',
         items: [
           {
-            id: 'exp-1',
+            id: 'exp-5',
             period: '2022 - Present',
-            title: 'Senior Framer Developer',
-            organization: 'Freelance',
-            description: 'Building high-quality websites and applications using Framer, Webflow, and React',
+            title: 'Software Engineer',
+            organization: 'PropertyGuru Group - Singapore',
+            description: 'Building marketplace agent products focusing on web and backend development. Developing Agentnet mobile features in a product-based, outcome-focused development culture.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software Engineer / Lead Developer',
+            organization: 'Maybank - Singapore',
+            description: 'Built features for Maybank web banking app. Led mobile banking app development team and coordinated with offshore developers to deliver products on schedule.',
           },
         ],
       },
       {
         id: 'past',
-        label: '2018 - 2022',
+        label: '2015 - 2021',
         items: [
           {
-            id: 'exp-2',
-            period: '2020 - 2022',
-            title: 'UI/UX Designer',
-            organization: 'Creative Agency Co.',
-            description: 'Led design for 20+ client projects',
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software Engineer',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Collaborated with Incentivio, a US-based food tech startup, to develop and deliver web-based features for their digital ordering platform.'
           },
           {
-            id: 'exp-3',
-            period: '2018 - 2020',
-            title: 'Junior Web Developer',
-            organization: 'TechStart Inc.',
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software Engineer / Lead Engineer',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Led mobile/web development teams, integrated microservices into frontend products, and managed the Noetic engineering team.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software Engineer / Associate Software Engineer',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Worked on various web development projects using PHP, JavaScript, and MySQL. Assisted in the development and maintenance of client websites and internal tools.',
           },
         ],
       },
@@ -82,16 +97,10 @@ export const enContent: SiteContent = {
         items: [
           {
             id: 'edu-1',
-            period: '2018 - 2022',
-            title: 'Bachelor of Design',
-            organization: 'California Institute of Arts',
-            description: 'Focused on UI/UX design and interactive media',
-          },
-          {
-            id: 'edu-2',
-            period: '2016 - 2018',
-            title: 'Associate Degree in Web Development',
-            organization: 'Los Angeles Community College',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Computer Science',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'My academic journey built a strong foundation in software engineering, distributed systems, algorithms, and AI, while hands-on projects strengthened my ability to apply theory to real-world, production-grade systems.',
           },
         ],
       },
@@ -104,25 +113,25 @@ export const enContent: SiteContent = {
     services: [
       {
         id: 'svc-1',
-        title: 'Website Design',
-        description: 'I created digital products with unique ideas use Figma & Framer',
-        projectCount: 24,
+        title: 'Frontend & Product Development',
+        description:
+          'I build scalable, user-focused web applications using React, Next.js, Tailwind CSS, and modern state management. My work emphasizes clean architecture, performance, and measurable product outcomes rather than just visuals.',
         projectLabel: 'PROJECTS',
         icon: 'design',
       },
       {
         id: 'svc-2',
-        title: 'Development',
-        description: 'I build website go live with Framer, Webflow or WordPress',
-        projectCount: 126,
+        title: 'Backend & System Architecture',
+        description:
+          'I design and develop backend systems using NestJS, MySQL, MongoDB, Redis, and Python. I focus on maintainable APIs, data integrity, and architectures that scale reliably in production environments.',
         projectLabel: 'PROJECTS',
         icon: 'code',
       },
       {
         id: 'svc-3',
-        title: 'SEO/Marketing',
-        description: 'Increase the traffic for your website with SEO optimized',
-        projectCount: 8,
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'I build cross-platform mobile apps with React Native and handle containerized deployments using Docker. I set up CI pipelines with GitHub Actions, enforce code quality with SonarQube and QLTY, and deploy across AWS, DigitalOcean, and self-hosted infrastructure.',
         projectLabel: 'PROJECTS',
         icon: 'seo',
       },
@@ -262,5 +271,11 @@ export const enContent: SiteContent = {
     toggleTheme: 'Toggle theme',
     lightMode: 'Switch to light mode',
     darkMode: 'Switch to dark mode',
+  },
+  notFound: {
+    title: 'Page Not Found',
+    heading: '404',
+    description: "Oops! The page you're looking for doesn't exist. It might have been moved or deleted.",
+    homeButtonText: 'Back to Home',
   },
 };

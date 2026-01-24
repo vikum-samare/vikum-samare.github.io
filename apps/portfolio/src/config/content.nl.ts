@@ -35,8 +35,8 @@ export const nlContent: SiteContent = {
     heading: 'Elk geweldig ontwerp begint met een nog',
     headingAccent: 'beter verhaal',
     paragraphs: [
-      'Sinds ik bijna 8 jaar geleden mijn reis als freelance designer begon, heb ik op afstand gewerkt voor bureaus, startups geadviseerd en samengewerkt met getalenteerde mensen om digitale producten te maken voor zowel zakelijk als consumentengebruik.',
-      'Ik ben rustig zelfverzekerd, van nature nieuwsgierig en werk voortdurend aan het verbeteren van mijn vaardigheden - één ontwerpprobleem tegelijk.',
+      "Ik floreer in productgebaseerde ontwikkelingsculturen met resultaatgericht werk, gespecialiseerd in web-, backend- en mobiele ontwikkeling om impactvolle oplossingen te leveren.",
+      "Met meer dan 8 jaar ervaring in fintech, food tech en vastgoedmarktplaatsen in Singapore en Sri Lanka, heb ik ontwikkelingsteams geleid, microservices geïntegreerd en schaalbare functies gebouwd voor webbanking-apps, mobiele platforms en digitale bestelsystemen. Van mijn begintijd met het bouwen van PHP-websites tot het leiden van mobile banking-teams bij Maybank en het ontwikkelen van marktplaatsproducten bij PropertyGuru, heb ik consequent oplossingen geleverd die technische excellentie verbinden met bedrijfsresultaten."
     ],
   },
   resume: {
@@ -46,33 +46,48 @@ export const nlContent: SiteContent = {
     sections: [
       {
         id: 'current',
-        label: '2022 - Heden',
+        label: '2021 - Heden',
         items: [
           {
-            id: 'exp-1',
+            id: 'exp-5',
             period: '2022 - Heden',
-            title: 'Senior Framer Ontwikkelaar',
-            organization: 'Freelance',
-            description: 'Bouwen van hoogwaardige websites en applicaties met Framer, Webflow en React',
+            title: 'Software Engineer',
+            organization: 'PropertyGuru Group - Singapore',
+            description: 'Bouwen van marktplaats agentproducten met focus op web- en backend-ontwikkeling. Ontwikkeling van Agentnet mobiele functies in een productgebaseerde, resultaatgerichte ontwikkelingscultuur.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software Engineer / Lead Developer',
+            organization: 'Maybank - Singapore',
+            description: 'Gebouwde functies voor Maybank webbanking-app. Leidde mobile banking app ontwikkelingsteam en coördineerde met offshore ontwikkelaars om producten op schema te leveren.',
           },
         ],
       },
       {
         id: 'past',
-        label: '2018 - 2022',
+        label: '2015 - 2021',
         items: [
           {
-            id: 'exp-2',
-            period: '2020 - 2022',
-            title: 'UI/UX Designer',
-            organization: 'Creative Agency Co.',
-            description: 'Leidde ontwerp voor 20+ klantprojecten',
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software Engineer',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Samengewerkt met Incentivio, een Amerikaans food tech startup, om webgebaseerde functies te ontwikkelen en te leveren voor hun digitale bestelplatform.'
           },
           {
-            id: 'exp-3',
-            period: '2018 - 2020',
-            title: 'Junior Webontwikkelaar',
-            organization: 'TechStart Inc.',
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software Engineer / Lead Engineer',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Leidde mobiele/web ontwikkelingsteams, geïntegreerde microservices in frontend producten, en beheerde het Noetic engineering team.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software Engineer / Associate Software Engineer',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Werkte aan verschillende webontwikkelingsprojecten met PHP, JavaScript en MySQL. Assisteerde bij de ontwikkeling en onderhoud van klantwebsites en interne tools.',
           },
         ],
       },
@@ -82,16 +97,10 @@ export const nlContent: SiteContent = {
         items: [
           {
             id: 'edu-1',
-            period: '2018 - 2022',
-            title: 'Bachelor in Design',
-            organization: 'California Institute of Arts',
-            description: 'Focus op UI/UX-ontwerp en interactieve media',
-          },
-          {
-            id: 'edu-2',
-            period: '2016 - 2018',
-            title: 'Associate Degree in Webontwikkeling',
-            organization: 'Los Angeles Community College',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Computer Science',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'Mijn academische reis bouwde een sterke basis in software engineering, gedistribueerde systemen, algoritmes en AI, terwijl hands-on projecten mijn vermogen versterkten om theorie toe te passen op echte, productie-grade systemen.',
           },
         ],
       },
@@ -104,25 +113,25 @@ export const nlContent: SiteContent = {
     services: [
       {
         id: 'svc-1',
-        title: 'Website Ontwerp',
-        description: 'Ik creëer digitale producten met unieke ideeën met Figma & Framer',
-        projectCount: 24,
+        title: 'Frontend & Productontwikkeling',
+        description:
+          'Ik bouw schaalbare, gebruikersgerichte webapplicaties met React, Next.js, Tailwind CSS en modern state management. Mijn werk benadrukt schone architectuur, prestaties en meetbare productresultaten in plaats van alleen visuele aspecten.',
         projectLabel: 'PROJECTEN',
         icon: 'design',
       },
       {
         id: 'svc-2',
-        title: 'Ontwikkeling',
-        description: 'Ik bouw websites live met Framer, Webflow of WordPress',
-        projectCount: 126,
+        title: 'Backend & Systeemarchitectuur',
+        description:
+          'Ik ontwerp en ontwikkel backend-systemen met NestJS, MySQL, MongoDB, Redis en Python. Ik focus op onderhoudbare APIs, data-integriteit en architecturen die betrouwbaar schalen in productieomgevingen.',
         projectLabel: 'PROJECTEN',
         icon: 'code',
       },
       {
         id: 'svc-3',
-        title: 'SEO/Marketing',
-        description: 'Verhoog het verkeer naar uw website met SEO-optimalisatie',
-        projectCount: 8,
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'Ik bouw cross-platform mobiele apps met React Native en beheer gecontaineriseerde deployments met Docker. Ik zet CI-pipelines op met GitHub Actions, handhaaf codekwaliteit met SonarQube en QLTY, en deploy naar AWS, DigitalOcean en zelf-gehoste infrastructuur.',
         projectLabel: 'PROJECTEN',
         icon: 'seo',
       },
@@ -262,5 +271,11 @@ export const nlContent: SiteContent = {
     toggleTheme: 'Thema wisselen',
     lightMode: 'Naar lichte modus',
     darkMode: 'Naar donkere modus',
+  },
+  notFound: {
+    title: 'Pagina niet gevonden',
+    heading: '404',
+    description: 'Oeps! De pagina die je zoekt bestaat niet. Het is mogelijk verplaatst of verwijderd.',
+    homeButtonText: 'Terug naar Home',
   },
 };

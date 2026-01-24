@@ -86,7 +86,6 @@ export interface ServiceItem {
   readonly id: string;
   readonly title: string;
   readonly description: string;
-  readonly projectCount: number;
   readonly projectLabel: string;
   readonly icon: 'design' | 'code' | 'seo' | 'mobile' | 'consulting';
 }
@@ -237,6 +236,16 @@ export interface ThemeLabels {
 }
 
 /**
+ * 404 page content
+ */
+export interface NotFoundContent {
+  readonly title: string;
+  readonly heading: string;
+  readonly description: string;
+  readonly homeButtonText: string;
+}
+
+/**
  * Complete site content configuration
  */
 export interface SiteContent {
@@ -258,4 +267,5 @@ export interface SiteContent {
   readonly contact: ContactContent;
   readonly navigation: NavigationContent;
   readonly theme: ThemeLabels;
+  readonly notFound: NotFoundContent;
 }
