@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme */
+    --bg-base: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-card: #ffffff;
+    --border-color: #e2e8f0;
+
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --text-inverted: #f8fafc;
+
+    --accent-primary: #0891b2;
+    --accent-secondary: #0284c7;
+    --accent-subtle: #06b6d4;
+
+    --state-hover: #f1f5f9;
+    --state-active: #e2e8f0;
+    --state-focus: #0891b2;
+  }
+
+  .dark {
+    /* Dark theme (default) */
+    --bg-base: #0f1115;
+    --bg-surface: #14161a;
+    --bg-card: #181b20;
+    --border-color: #2a2e35;
+
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --text-muted: #6b7280;
+    --text-inverted: #0f1115;
+
+    --accent-primary: #22d3ee;
+    --accent-secondary: #38bdf8;
+    --accent-subtle: #0ea5e9;
+
+    --state-hover: #1f2933;
+    --state-active: #27303a;
+    --state-focus: #22d3ee;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background-base text-text-primary font-sans antialiased;
+  }
+
+  /* Custom scrollbar for dark theme */
+  .dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    background: var(--bg-surface);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-4xl mx-auto px-6 py-section;
+  }
+
+  .card-base {
+    @apply bg-background-card border border-border rounded-xl p-card;
+  }
+
+  .accent-text {
+    @apply text-accent-primary;
+  }
+
+  .heading-xl {
+    @apply text-4xl md:text-4xl font-semibold leading-tight;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-3xl font-semibold leading-tight;
+  }
+
+  .heading-md {
+    @apply text-2xl font-semibold;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           bg-accent-primary text-text-inverted font-medium 
+           rounded-full transition-all duration-normal ease-standard
+           hover:opacity-90 hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-background-base;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3
+           bg-transparent border border-border text-text-primary font-medium
+           rounded-full transition-all duration-normal ease-standard
+           hover:bg-state-hover hover:-translate-y-0.5
+           focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-background-base;
+  }
+
+  .nav-icon-btn {
+    @apply w-10 h-10 rounded-full border border-border
+           flex items-center justify-center
+           text-text-secondary transition-all duration-normal ease-standard
+           hover:text-accent-primary hover:border-accent-primary
+           focus:outline-none focus:ring-2 focus:ring-accent-primary;
+  }
+
+  .nav-icon-btn.active {
+    @apply text-accent-primary border-accent-primary;
+  }
+
+  .form-input {
+    @apply w-full bg-transparent border-b border-border py-3
+           text-text-primary placeholder:text-text-muted
+           transition-colors duration-normal
+           focus:outline-none focus:border-accent-primary;
+  }
+
+  .form-select {
+    @apply w-full bg-transparent border-b border-border py-3
+           text-text-primary appearance-none cursor-pointer
+           transition-colors duration-normal
+           focus:outline-none focus:border-accent-primary;
+  }
+
+  .form-textarea {
+    @apply w-full bg-transparent border-b border-border py-3
+           text-text-primary placeholder:text-text-muted
+           resize-none min-h-24
+           transition-colors duration-normal
+           focus:outline-none focus:border-accent-primary;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-rotate-slow {
+    animation: rotate 8s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
