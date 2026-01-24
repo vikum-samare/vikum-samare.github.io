@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import { deContent } from '@/config';
 import { Layout } from '@/components/layout';
@@ -16,6 +17,13 @@ import {
 export default function DeHomePage() {
   const content = deContent;
 
+  useEffect(() => {
+    document.documentElement.lang = 'de';
+    return () => {
+      document.documentElement.lang = 'en';
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -27,7 +35,6 @@ export default function DeHomePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
         <meta name="twitter:description" content={content.meta.description} />
-        <html lang="de" />
       </Head>
 
       <Layout content={content}>
