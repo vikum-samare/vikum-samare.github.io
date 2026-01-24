@@ -13,16 +13,16 @@ interface LayoutProps {
 
 export function Layout({ children, content }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-background-base">
+    <div className="min-h-screen bg-background-base overflow-x-hidden">
       <ThemeToggle labels={content.theme} />
       <MobileHeader profile={content.profile} navigation={content.navigation} />
-
-      <MobileProfileCard profile={content.profile} />
       
       <div className="flex">
         <Sidebar profile={content.profile} />
         
-        <main className="flex-1 lg:ml-0 min-h-screen">
+        <main className="flex-1 lg:ml-0 min-h-screen w-full">
+          {/* Mobile Profile Card - Shows before content on mobile */}
+          <MobileProfileCard profile={content.profile} />
           {children}
         </main>
         

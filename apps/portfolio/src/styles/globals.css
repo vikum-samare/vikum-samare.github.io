@@ -51,6 +51,20 @@
     scroll-behavior: smooth;
   }
 
+  /* Fix for mobile viewport height (accounts for browser UI) */
+  @supports (height: 100dvh) {
+    .mobile-full-height {
+      min-height: 100dvh;
+    }
+  }
+
+  @supports not (height: 100dvh) {
+    .mobile-full-height {
+      min-height: 100vh;
+      min-height: -webkit-fill-available;
+    }
+  }
+
   body {
     @apply bg-background-base text-text-primary font-sans antialiased;
   }
