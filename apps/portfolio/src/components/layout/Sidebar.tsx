@@ -12,6 +12,8 @@ const socialIconMap = {
   instagram: Icons.Instagram,
   github: Icons.GitHub,
   linkedin: Icons.LinkedIn,
+  youtube: Icons.YouTube,
+  stackoverflow: Icons.Stackoverflow,
 } as const;
 
 export function Sidebar({ profile }: SidebarProps) {

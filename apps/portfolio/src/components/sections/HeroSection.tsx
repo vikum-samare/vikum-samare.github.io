@@ -29,7 +29,7 @@ export function HeroSection({ content }: HeroSectionProps) {
             href="#portfolio"
             className="inline-flex items-center gap-4 text-text-secondary hover:text-text-primary transition-colors"
           >
-            <div className="relative w-24 h-24">
+            <div className="relative w-32 h-32">
               <svg 
                 className="w-full h-full animate-rotate-slow" 
                 viewBox="0 0 100 100"
@@ -48,7 +48,7 @@ export function HeroSection({ content }: HeroSectionProps) {
               </svg>
               
               <div className="absolute inset-0 flex items-center justify-center">
-                <Icons.ArrowDown width={24} height={24} />
+                <Icons.ArrowDown width={28} height={28} />
               </div>
             </div>
           </a>

@@ -58,10 +58,7 @@ export function ThemeToggle({ labels }: ThemeToggleProps) {
         'focus:outline-none focus:ring-2 focus:ring-accent-primary'
       )}
     >
-      <span className={clsx(
-        'transition-transform duration-slow',
-        isHovered && 'animate-spin-slow'
-      )}>
+      <span className="animate-rotate-slow">
         <Icons.Settings width={18} height={18} />
       </span>
       

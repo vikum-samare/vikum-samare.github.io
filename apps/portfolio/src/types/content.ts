@@ -7,7 +7,7 @@ export type Locale = 'en' | 'de' | 'nl';
  * Social link configuration
  */
 export interface SocialLink {
-  readonly platform: 'twitter' | 'dribbble' | 'instagram' | 'github' | 'linkedin';
+  readonly platform: 'twitter' | 'dribbble' | 'instagram' | 'github' | 'linkedin' | 'youtube' | 'stackoverflow';
   readonly url: string;
   readonly label: string;
 }
@@ -61,16 +61,22 @@ export interface ResumeItem {
 }
 
 /**
+ * Resume timeline section (collapsible group)
+ */
+export interface ResumeTimelineSection {
+  readonly id: string;
+  readonly label: string;
+  readonly items: readonly ResumeItem[];
+}
+
+/**
  * Resume section content
  */
 export interface ResumeContent {
   readonly sectionLabel: string;
   readonly heading: string;
   readonly headingAccent: string;
-  readonly educationTitle: string;
-  readonly experienceTitle: string;
-  readonly education: readonly ResumeItem[];
-  readonly experience: readonly ResumeItem[];
+  readonly sections: readonly ResumeTimelineSection[];
 }
 
 /**

@@ -1,7 +1,7 @@
 {
-  "name": "Drake Portfolio",
-  "short_name": "Drake",
-  "description": "Framer Designer & Developer Portfolio",
+  "name": "Vikum Portfolio",
+  "short_name": "Vikum",
+  "description": "Fullstack Web & Mobile Dev Portfolio",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f1115",
