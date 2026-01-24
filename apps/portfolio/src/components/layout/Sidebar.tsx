@@ -32,13 +32,14 @@ export function Sidebar({ profile }: SidebarProps) {
         </div>
 
         <div className="relative mb-6 mx-auto">
-          <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 border-border">
+          <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 border-border transition-none">
             <Image
               src={profile.avatarUrl}
               alt={profile.name}
               width={192}
               height={192}
-              className="w-full h-full object-cover grayscale"
+              className="w-full h-full object-cover [image-rendering:auto]"
+              priority
             />
           </div>
         </div>
