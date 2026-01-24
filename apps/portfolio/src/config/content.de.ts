@@ -1,0 +1,281 @@
+import { SiteContent } from '@/types';
+
+export const deContent: SiteContent = {
+  locale: 'de',
+  meta: {
+    title: 'Vikum - Fullstack-Ingenieur & Mobile-Entwickler',
+    description: 'Ich entwickle Fullstack-Webanwendungen, mobile Apps und produktfokussierte Lösungen, die echte Probleme lösen.',
+  },
+  profile: {
+    name: 'Vikum',
+    title: 'Fullstack Web',
+    subtitle: '& Mobile',
+    email: 'hello@vikum.dev',
+    location: 'Ansässig in Singapur',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+    copyright: '© 2026 Vikum. Alle Rechte vorbehalten',
+    hireButtonText: 'KONTAKT!',
+    socialLinks: [
+      { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
+      { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
+      { platform: 'instagram', url: 'https://www.instagram.com/vikum_samare', label: 'Instagram' },
+      { platform: 'youtube', url: 'https://www.youtube.com/@vikumsamaranayake1723', label: 'YouTube' },
+    ],
+  },
+  hero: {
+    sectionLabel: 'VORSTELLUNG',
+    greeting: 'Hallo, das ist',
+    name: 'Vikum',
+    title: 'Fullstack-Ingenieur und DevOps-Enthusiast',
+    description: 'Ich entwickle Fullstack-Webanwendungen, mobile Apps und produktfokussierte Lösungen, die echte Probleme lösen. Leidenschaftlich daran interessiert, nahtlose Benutzererlebnisse und skalierbare Systeme zu schaffen.',
+    scrollCta: 'MEINE PROJEKTE',
+  },
+  about: {
+    sectionLabel: 'ÜBER MICH',
+    heading: 'Jedes großartige Design beginnt mit einer noch',
+    headingAccent: 'besseren Geschichte',
+    paragraphs: [
+      "Ich gedeihe in produktbasierten Entwicklungskulturen mit ergebnisorientierten Arbeiten und spezialisiere mich auf Web-, Backend- und Mobile-Entwicklung, um wirkungsvolle Lösungen zu liefern.",
+      "Mit über 8 Jahren Erfahrung in den Bereichen Fintech, Food Tech und Immobilien-Marktplätzen in Singapur und Sri Lanka habe ich Entwicklungsteams geleitet, Microservices integriert und skalierbare Funktionen für Web-Banking-Apps, mobile Plattformen und digitale Bestellsysteme entwickelt. Von meinen Anfängen beim Erstellen von PHP-Websites bis zur Leitung von Mobile-Banking-Teams bei Maybank und der Entwicklung von Marktplatz-Produkten bei PropertyGuru habe ich konsequent Lösungen geliefert, die technische Exzellenz mit Geschäftsergebnissen verbinden."
+    ],
+  },
+  resume: {
+    sectionLabel: 'LEBENSLAUF',
+    heading: 'Ausbildung &',
+    headingAccent: 'Erfahrung',
+    sections: [
+      {
+        id: 'current',
+        label: '2021 - Heute',
+        items: [
+          {
+            id: 'exp-5',
+            period: '2022 - Heute',
+            title: 'Software-Ingenieur',
+            organization: 'PropertyGuru Group - Singapur',
+            description: 'Entwicklung von Marktplatz-Agentenprodukten mit Fokus auf Web- und Backend-Entwicklung. Entwicklung von Agentnet-Mobile-Funktionen in einer produktbasierten, ergebnisorientierten Entwicklungskultur.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software-Ingenieur / Lead-Entwickler',
+            organization: 'Maybank - Singapur',
+            description: 'Entwicklung von Funktionen für die Maybank Web-Banking-App. Leitung des Mobile-Banking-App-Entwicklungsteams und Koordination mit Offshore-Entwicklern zur termingerechten Produktlieferung.',
+          },
+        ],
+      },
+      {
+        id: 'past',
+        label: '2015 - 2021',
+        items: [
+          {
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software-Ingenieur',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Zusammenarbeit mit Incentivio, einem US-amerikanischen Food-Tech-Startup, zur Entwicklung und Bereitstellung webbasierter Funktionen für deren digitale Bestellplattform.'
+          },
+          {
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software-Ingenieur / Lead-Ingenieur',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Leitung von Mobile/Web-Entwicklungsteams, Integration von Microservices in Frontend-Produkte und Verwaltung des Noetic-Ingenieursteams.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software-Ingenieur / Associate Software-Ingenieur',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Arbeit an verschiedenen Webentwicklungsprojekten mit PHP, JavaScript und MySQL. Unterstützung bei der Entwicklung und Wartung von Kunden-Websites und internen Tools.',
+          },
+        ],
+      },
+      {
+        id: 'education',
+        label: 'Ausbildung',
+        items: [
+          {
+            id: 'edu-1',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Informatik',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'Meine akademische Reise schuf eine solide Grundlage in Software-Engineering, verteilten Systemen, Algorithmen und KI, während praktische Projekte meine Fähigkeit stärkten, Theorie auf reale, produktionsreife Systeme anzuwenden.',
+          },
+        ],
+      },
+    ],
+  },
+  services: {
+    sectionLabel: 'DIENSTLEISTUNGEN',
+    heading: 'Meine',
+    headingAccent: 'Spezialisierungen',
+    services: [
+      {
+        id: 'svc-1',
+        title: 'Frontend & Produktentwicklung',
+        description:
+          'Ich entwickle skalierbare, benutzerzentrierte Webanwendungen mit React, Next.js, Tailwind CSS und modernem State-Management. Meine Arbeit legt Wert auf klare Architektur, Performance und messbare Produktergebnisse statt nur visuelle Gestaltung.',
+        projectLabel: 'PROJEKTE',
+        icon: 'design',
+      },
+      {
+        id: 'svc-2',
+        title: 'Backend & Systemarchitektur',
+        description:
+          'Ich entwerfe und entwickle Backend-Systeme mit NestJS, MySQL, MongoDB, Redis und Python. Mein Fokus liegt auf wartbaren APIs, Datenintegrität und Architekturen, die in Produktionsumgebungen zuverlässig skalieren.',
+        projectLabel: 'PROJEKTE',
+        icon: 'code',
+      },
+      {
+        id: 'svc-3',
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'Ich entwickle plattformübergreifende mobile Apps mit React Native und verwalte containerisierte Deployments mit Docker. Ich richte CI-Pipelines mit GitHub Actions ein, setze Code-Qualität mit SonarQube und QLTY durch und deploye auf AWS, DigitalOcean und selbstgehosteter Infrastruktur.',
+        projectLabel: 'PROJEKTE',
+        icon: 'seo',
+      },
+    ],
+  },
+  skills: {
+    sectionLabel: 'MEINE FÄHIGKEITEN',
+    heading: 'Meine',
+    headingAccent: 'Vorteile',
+    skills: [
+      { id: 'skill-1', name: 'Figma', percentage: 92, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+      { id: 'skill-2', name: 'Framer', percentage: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg' },
+      { id: 'skill-3', name: 'Webflow', percentage: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg' },
+      { id: 'skill-4', name: 'React', percentage: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { id: 'skill-5', name: 'WordPress', percentage: 86, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
+      { id: 'skill-6', name: 'Laravel/PHP', percentage: 70, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+    ],
+  },
+  portfolio: {
+    sectionLabel: 'PORTFOLIO',
+    heading: 'Ausgewählte',
+    headingAccent: 'Projekte',
+    projects: [
+      {
+        id: 'proj-1',
+        title: 'Bureau - Architekturstudio Website',
+        category: 'Webdesign',
+        imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+        tags: ['Figma', 'Framer', 'WordPress'],
+        link: '#',
+      },
+      {
+        id: 'proj-2',
+        title: 'Hinterland - Immobilien-Website Redesign',
+        category: 'Webdesign',
+        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React'],
+        link: '#',
+      },
+      {
+        id: 'proj-3',
+        title: 'Lewis Studio - Kreativagentur',
+        category: 'Branding',
+        imageUrl: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&h=600&fit=crop',
+        tags: ['Framer'],
+        link: '#',
+      },
+      {
+        id: 'proj-4',
+        title: 'Serenity - Gesundheits- & Wellness-App',
+        category: 'Mobile App',
+        imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React Native'],
+        link: '#',
+      },
+    ],
+  },
+  testimonials: {
+    sectionLabel: 'REFERENZEN',
+    heading: 'Vertrauen von',
+    headingAccent: 'hunderten Kunden',
+    testimonials: [
+      {
+        id: 'test-1',
+        quote: 'Vikum - Ein Entwickler mit Kreativität, Professionalität und Meisterschaft im Code. Viel mehr als erwartet. Hochwertige Produkte & flexible Preise. Empfehlenswert!',
+        authorName: 'Paublo Dybala',
+        authorTitle: 'CEO',
+        authorCompany: 'IBM Global',
+        authorImageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJEKT',
+      },
+      {
+        id: 'test-2',
+        quote: 'Außergewöhnliche Arbeitsqualität und tolle Kommunikation während des gesamten Projekts. Würde definitiv wieder mit Vikum arbeiten!',
+        authorName: 'Sarah Johnson',
+        authorTitle: 'Gründerin',
+        authorCompany: 'StartupXYZ',
+        authorImageUrl: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJEKT',
+      },
+      {
+        id: 'test-3',
+        quote: 'Die Liebe zum Detail und das Designgefühl sind herausragend. Vikum hat unsere Vision in Realität verwandelt.',
+        authorName: 'Michael Chen',
+        authorTitle: 'Produktmanager',
+        authorCompany: 'TechCorp',
+        authorImageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJEKT',
+      },
+    ],
+  },
+  clients: {
+    heading: 'ZUSAMMENARBEIT MIT 60+ MARKEN WELTWEIT',
+    clients: [
+      { id: 'client-1', name: 'BLB', logoUrl: 'https://via.placeholder.com/150x50?text=BLB' },
+      { id: 'client-2', name: 'Christopher Willis', logoUrl: 'https://via.placeholder.com/150x50?text=CW' },
+      { id: 'client-3', name: 'Serenity Hotel', logoUrl: 'https://via.placeholder.com/150x50?text=Serenity' },
+      { id: 'client-4', name: 'Artchive', logoUrl: 'https://via.placeholder.com/150x50?text=Artchive' },
+      { id: 'client-5', name: 'Neuton Interactive', logoUrl: 'https://via.placeholder.com/150x50?text=Neuton' },
+      { id: 'client-6', name: 'Papillon', logoUrl: 'https://via.placeholder.com/150x50?text=Papillon' },
+      { id: 'client-7', name: 'Good Habits', logoUrl: 'https://via.placeholder.com/150x50?text=GoodHabits' },
+      { id: 'client-8', name: 'Creative Space', logoUrl: 'https://via.placeholder.com/150x50?text=Creative' },
+    ],
+  },
+  contact: {
+    sectionLabel: 'KONTAKT',
+    heading: 'Lass uns',
+    headingAccent: 'zusammenarbeiten!',
+    email: 'hello@Vikum.design',
+    fields: [
+      { id: 'name', label: 'VOLLSTÄNDIGER NAME', placeholder: 'Ihr vollständiger Name', type: 'text', required: true },
+      { id: 'email', label: 'E-MAIL', placeholder: 'Ihre E-Mail-Adresse', type: 'email', required: true },
+      { id: 'phone', label: 'TELEFON (optional)', placeholder: 'Ihre Telefonnummer', type: 'tel', required: false },
+      { id: 'subject', label: 'BETREFF', placeholder: 'Wählen Sie einen Betreff', type: 'select', required: true, options: ['Website Design', 'Entwicklung', 'SEO/Marketing', 'Sonstiges'] },
+      { id: 'budget', label: 'IHR BUDGET (optional)', placeholder: 'Ein Budgetrahmen für Ihr Projekt', type: 'text', required: false },
+      { id: 'message', label: 'NACHRICHT', placeholder: 'Schreiben Sie Ihre Nachricht hier ...', type: 'textarea', required: true },
+    ],
+    attachmentLabel: 'ANHANG HINZUFÜGEN',
+    submitButtonText: 'NACHRICHT SENDEN',
+  },
+  navigation: {
+    items: [
+      { id: 'nav-1', label: 'Start', icon: 'home', sectionId: 'hero' },
+      { id: 'nav-2', label: 'Über mich', icon: 'about', sectionId: 'about' },
+      { id: 'nav-3', label: 'Lebenslauf', icon: 'resume', sectionId: 'resume' },
+      { id: 'nav-4', label: 'Dienste', icon: 'services', sectionId: 'services' },
+      { id: 'nav-5', label: 'Fähigkeiten', icon: 'skills', sectionId: 'skills' },
+      { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Referenzen', icon: 'testimonials', sectionId: 'testimonials' },
+      { id: 'nav-8', label: 'Kontakt', icon: 'contact', sectionId: 'contact' },
+    ],
+  },
+  theme: {
+    toggleTheme: 'Thema wechseln',
+    lightMode: 'Zu hellem Modus wechseln',
+    darkMode: 'Zu dunklem Modus wechseln',
+  },
+  notFound: {
+    title: 'Seite nicht gefunden',
+    heading: '404',
+    description: 'Hoppla! Die gesuchte Seite existiert nicht. Sie wurde möglicherweise verschoben oder gelöscht.',
+    homeButtonText: 'Zurück zur Startseite',
+  },
+};

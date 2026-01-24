@@ -1,0 +1,281 @@
+import { SiteContent } from '@/types';
+
+export const nlContent: SiteContent = {
+  locale: 'nl',
+  meta: {
+    title: 'Vikum - Fullstack Engineer & Mobile Developer',
+    description: 'Ik bouw fullstack webapplicaties, mobiele apps en productgerichte oplossingen die echte problemen oplossen.',
+  },
+  profile: {
+    name: 'Vikum',
+    title: 'Fullstack Web',
+    subtitle: '& Mobile',
+    email: 'hello@vikum.dev',
+    location: 'Gevestigd in Singapore',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+    copyright: '© 2026 Vikum. Alle rechten voorbehouden',
+    hireButtonText: 'NEEM CONTACT OP!',
+    socialLinks: [
+      { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
+      { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
+      { platform: 'instagram', url: 'https://www.instagram.com/vikum_samare', label: 'Instagram' },
+      { platform: 'youtube', url: 'https://www.youtube.com/@vikumsamaranayake1723', label: 'YouTube' },
+    ],
+  },
+  hero: {
+    sectionLabel: 'INTRODUCTIE',
+    greeting: 'Hallo, dit is',
+    name: 'Vikum',
+    title: 'Fullstack Engineer en DevOps Enthousiast',
+    description: 'Ik bouw fullstack webapplicaties, mobiele apps en productgerichte oplossingen die echte problemen oplossen. Gepassioneerd over het creëren van naadloze gebruikerservaringen en schaalbare systemen.',
+    scrollCta: 'MIJN PROJECTEN',
+  },
+  about: {
+    sectionLabel: 'OVER MIJ',
+    heading: 'Elk geweldig ontwerp begint met een nog',
+    headingAccent: 'beter verhaal',
+    paragraphs: [
+      "Ik floreer in productgebaseerde ontwikkelingsculturen met resultaatgericht werk, gespecialiseerd in web-, backend- en mobiele ontwikkeling om impactvolle oplossingen te leveren.",
+      "Met meer dan 8 jaar ervaring in fintech, food tech en vastgoedmarktplaatsen in Singapore en Sri Lanka, heb ik ontwikkelingsteams geleid, microservices geïntegreerd en schaalbare functies gebouwd voor webbanking-apps, mobiele platforms en digitale bestelsystemen. Van mijn begintijd met het bouwen van PHP-websites tot het leiden van mobile banking-teams bij Maybank en het ontwikkelen van marktplaatsproducten bij PropertyGuru, heb ik consequent oplossingen geleverd die technische excellentie verbinden met bedrijfsresultaten."
+    ],
+  },
+  resume: {
+    sectionLabel: 'CV',
+    heading: 'Opleiding &',
+    headingAccent: 'Ervaring',
+    sections: [
+      {
+        id: 'current',
+        label: '2021 - Heden',
+        items: [
+          {
+            id: 'exp-5',
+            period: '2022 - Heden',
+            title: 'Software Engineer',
+            organization: 'PropertyGuru Group - Singapore',
+            description: 'Bouwen van marktplaats agentproducten met focus op web- en backend-ontwikkeling. Ontwikkeling van Agentnet mobiele functies in een productgebaseerde, resultaatgerichte ontwikkelingscultuur.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software Engineer / Lead Developer',
+            organization: 'Maybank - Singapore',
+            description: 'Gebouwde functies voor Maybank webbanking-app. Leidde mobile banking app ontwikkelingsteam en coördineerde met offshore ontwikkelaars om producten op schema te leveren.',
+          },
+        ],
+      },
+      {
+        id: 'past',
+        label: '2015 - 2021',
+        items: [
+          {
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software Engineer',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Samengewerkt met Incentivio, een Amerikaans food tech startup, om webgebaseerde functies te ontwikkelen en te leveren voor hun digitale bestelplatform.'
+          },
+          {
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software Engineer / Lead Engineer',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Leidde mobiele/web ontwikkelingsteams, geïntegreerde microservices in frontend producten, en beheerde het Noetic engineering team.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software Engineer / Associate Software Engineer',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Werkte aan verschillende webontwikkelingsprojecten met PHP, JavaScript en MySQL. Assisteerde bij de ontwikkeling en onderhoud van klantwebsites en interne tools.',
+          },
+        ],
+      },
+      {
+        id: 'education',
+        label: 'Opleiding',
+        items: [
+          {
+            id: 'edu-1',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Computer Science',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'Mijn academische reis bouwde een sterke basis in software engineering, gedistribueerde systemen, algoritmes en AI, terwijl hands-on projecten mijn vermogen versterkten om theorie toe te passen op echte, productie-grade systemen.',
+          },
+        ],
+      },
+    ],
+  },
+  services: {
+    sectionLabel: 'DIENSTEN',
+    heading: 'Mijn',
+    headingAccent: 'Specialisaties',
+    services: [
+      {
+        id: 'svc-1',
+        title: 'Frontend & Productontwikkeling',
+        description:
+          'Ik bouw schaalbare, gebruikersgerichte webapplicaties met React, Next.js, Tailwind CSS en modern state management. Mijn werk benadrukt schone architectuur, prestaties en meetbare productresultaten in plaats van alleen visuele aspecten.',
+        projectLabel: 'PROJECTEN',
+        icon: 'design',
+      },
+      {
+        id: 'svc-2',
+        title: 'Backend & Systeemarchitectuur',
+        description:
+          'Ik ontwerp en ontwikkel backend-systemen met NestJS, MySQL, MongoDB, Redis en Python. Ik focus op onderhoudbare APIs, data-integriteit en architecturen die betrouwbaar schalen in productieomgevingen.',
+        projectLabel: 'PROJECTEN',
+        icon: 'code',
+      },
+      {
+        id: 'svc-3',
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'Ik bouw cross-platform mobiele apps met React Native en beheer gecontaineriseerde deployments met Docker. Ik zet CI-pipelines op met GitHub Actions, handhaaf codekwaliteit met SonarQube en QLTY, en deploy naar AWS, DigitalOcean en zelf-gehoste infrastructuur.',
+        projectLabel: 'PROJECTEN',
+        icon: 'seo',
+      },
+    ],
+  },
+  skills: {
+    sectionLabel: 'MIJN VAARDIGHEDEN',
+    heading: 'Mijn',
+    headingAccent: 'Voordelen',
+    skills: [
+      { id: 'skill-1', name: 'Figma', percentage: 92, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+      { id: 'skill-2', name: 'Framer', percentage: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg' },
+      { id: 'skill-3', name: 'Webflow', percentage: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg' },
+      { id: 'skill-4', name: 'React', percentage: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { id: 'skill-5', name: 'WordPress', percentage: 86, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
+      { id: 'skill-6', name: 'Laravel/PHP', percentage: 70, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+    ],
+  },
+  portfolio: {
+    sectionLabel: 'PORTFOLIO',
+    heading: 'Uitgelichte',
+    headingAccent: 'Projecten',
+    projects: [
+      {
+        id: 'proj-1',
+        title: 'Bureau - Architectuurstudio Website',
+        category: 'Webontwerp',
+        imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+        tags: ['Figma', 'Framer', 'WordPress'],
+        link: '#',
+      },
+      {
+        id: 'proj-2',
+        title: 'Hinterland - Vastgoed Site Herontwerp',
+        category: 'Webontwerp',
+        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React'],
+        link: '#',
+      },
+      {
+        id: 'proj-3',
+        title: 'Lewis Studio - Creatief Bureau',
+        category: 'Branding',
+        imageUrl: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&h=600&fit=crop',
+        tags: ['Framer'],
+        link: '#',
+      },
+      {
+        id: 'proj-4',
+        title: 'Serenity - Gezondheid & Wellness App',
+        category: 'Mobiele App',
+        imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React Native'],
+        link: '#',
+      },
+    ],
+  },
+  testimonials: {
+    sectionLabel: 'GETUIGENISSEN',
+    heading: 'Vertrouwd door',
+    headingAccent: 'honderden klanten',
+    testimonials: [
+      {
+        id: 'test-1',
+        quote: 'Vikum - Een ontwikkelaar met creativiteit, professionaliteit en meesterschap in code. Veel meer dan verwacht. Hoogwaardige producten & flexibele prijzen. Aanbevolen!',
+        authorName: 'Paublo Dybala',
+        authorTitle: 'CEO',
+        authorCompany: 'IBM Global',
+        authorImageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+      {
+        id: 'test-2',
+        quote: 'Uitzonderlijke werkkwaliteit en geweldige communicatie gedurende het hele project. Zou zeker weer met Vikum werken!',
+        authorName: 'Sarah Johnson',
+        authorTitle: 'Oprichter',
+        authorCompany: 'StartupXYZ',
+        authorImageUrl: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+      {
+        id: 'test-3',
+        quote: 'De aandacht voor detail en het ontwerpgevoel zijn uitstekend. Vikum heeft onze visie omgezet in werkelijkheid.',
+        authorName: 'Michael Chen',
+        authorTitle: 'Productmanager',
+        authorCompany: 'TechCorp',
+        authorImageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+    ],
+  },
+  clients: {
+    heading: 'SAMENWERKING MET 60+ MERKEN WERELDWIJD',
+    clients: [
+      { id: 'client-1', name: 'BLB', logoUrl: 'https://via.placeholder.com/150x50?text=BLB' },
+      { id: 'client-2', name: 'Christopher Willis', logoUrl: 'https://via.placeholder.com/150x50?text=CW' },
+      { id: 'client-3', name: 'Serenity Hotel', logoUrl: 'https://via.placeholder.com/150x50?text=Serenity' },
+      { id: 'client-4', name: 'Artchive', logoUrl: 'https://via.placeholder.com/150x50?text=Artchive' },
+      { id: 'client-5', name: 'Neuton Interactive', logoUrl: 'https://via.placeholder.com/150x50?text=Neuton' },
+      { id: 'client-6', name: 'Papillon', logoUrl: 'https://via.placeholder.com/150x50?text=Papillon' },
+      { id: 'client-7', name: 'Good Habits', logoUrl: 'https://via.placeholder.com/150x50?text=GoodHabits' },
+      { id: 'client-8', name: 'Creative Space', logoUrl: 'https://via.placeholder.com/150x50?text=Creative' },
+    ],
+  },
+  contact: {
+    sectionLabel: 'CONTACT',
+    heading: 'Laten we',
+    headingAccent: 'samenwerken!',
+    email: 'hello@Vikum.design',
+    fields: [
+      { id: 'name', label: 'VOLLEDIGE NAAM', placeholder: 'Uw volledige naam', type: 'text', required: true },
+      { id: 'email', label: 'E-MAIL', placeholder: 'Uw e-mailadres', type: 'email', required: true },
+      { id: 'phone', label: 'TELEFOON (optioneel)', placeholder: 'Uw telefoonnummer', type: 'tel', required: false },
+      { id: 'subject', label: 'ONDERWERP', placeholder: 'Selecteer een onderwerp', type: 'select', required: true, options: ['Website Ontwerp', 'Ontwikkeling', 'SEO/Marketing', 'Anders'] },
+      { id: 'budget', label: 'UW BUDGET (optioneel)', placeholder: 'Een budgetbereik voor uw project', type: 'text', required: false },
+      { id: 'message', label: 'BERICHT', placeholder: 'Schrijf uw bericht hier ...', type: 'textarea', required: true },
+    ],
+    attachmentLabel: 'BIJLAGE TOEVOEGEN',
+    submitButtonText: 'BERICHT VERZENDEN',
+  },
+  navigation: {
+    items: [
+      { id: 'nav-1', label: 'Home', icon: 'home', sectionId: 'hero' },
+      { id: 'nav-2', label: 'Over mij', icon: 'about', sectionId: 'about' },
+      { id: 'nav-3', label: 'CV', icon: 'resume', sectionId: 'resume' },
+      { id: 'nav-4', label: 'Diensten', icon: 'services', sectionId: 'services' },
+      { id: 'nav-5', label: 'Vaardigheden', icon: 'skills', sectionId: 'skills' },
+      { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Getuigenissen', icon: 'testimonials', sectionId: 'testimonials' },
+      { id: 'nav-8', label: 'Contact', icon: 'contact', sectionId: 'contact' },
+    ],
+  },
+  theme: {
+    toggleTheme: 'Thema wisselen',
+    lightMode: 'Naar lichte modus',
+    darkMode: 'Naar donkere modus',
+  },
+  notFound: {
+    title: 'Pagina niet gevonden',
+    heading: '404',
+    description: 'Oeps! De pagina die je zoekt bestaat niet. Het is mogelijk verplaatst of verwijderd.',
+    homeButtonText: 'Terug naar Home',
+  },
+};

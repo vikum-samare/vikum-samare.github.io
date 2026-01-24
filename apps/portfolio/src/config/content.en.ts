@@ -1,0 +1,281 @@
+import { SiteContent } from '@/types';
+
+export const enContent: SiteContent = {
+  locale: 'en',
+  meta: {
+    title: 'Vikum - Fullstack Engineer & Mobile Developer',
+    description: 'I build fullstack web applications, mobile apps, and product-focused solutions that solve real problems.',
+  },
+  profile: {
+    name: 'Vikum',
+    title: 'Fullstack Web',
+    subtitle: '& Mobile',
+    email: 'hello@vikum.dev',
+    location: 'Based in Singapore',
+    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face',
+    copyright: '© 2026 Vikum. All Rights Reserved',
+    hireButtonText: 'HIRE ME!',
+    socialLinks: [
+      { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
+      { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
+      { platform: 'instagram', url: 'https://www.instagram.com/vikum_samare', label: 'Instagram' },
+      { platform: 'youtube', url: 'https://www.youtube.com/@vikumsamaranayake1723', label: 'YouTube' },
+    ],
+  },
+  hero: {
+    sectionLabel: 'INTRODUCE',
+    greeting: 'Hello, this is',
+    name: 'Vikum',
+    title: 'Fullstack Engineer and DevOps Enthusiast',
+    description: 'I build fullstack web applications, mobile apps, and product-focused solutions that solve real problems. Passionate about creating seamless user experiences and scalable systems.',
+    scrollCta: 'MY PROJECTS',
+  },
+  about: {
+    sectionLabel: 'ABOUT',
+    heading: 'Every great design begin with an even',
+    headingAccent: 'better story',
+    paragraphs: [
+      "I thrive in product-based development cultures with outcome-focused work, specializing in web, backend, and mobile development to deliver impactful solutions.",
+      "With over 8 years of experience spanning fintech, food tech, and real estate marketplaces across Singapore and Sri Lanka, I've led development teams, integrated microservices, and built scalable features for web banking apps, mobile platforms, and digital ordering systems. From my early days building PHP websites to leading mobile banking teams at Maybank and developing marketplace products at PropertyGuru, I've consistently delivered solutions that bridge technical excellence with business outcomes."
+    ],
+  },
+  resume: {
+    sectionLabel: 'RESUME',
+    heading: 'Education &',
+    headingAccent: 'Experience',
+    sections: [
+      {
+        id: 'current',
+        label: '2021 - Present',
+        items: [
+          {
+            id: 'exp-5',
+            period: '2022 - Present',
+            title: 'Software Engineer',
+            organization: 'PropertyGuru Group - Singapore',
+            description: 'Building marketplace agent products focusing on web and backend development. Developing Agentnet mobile features in a product-based, outcome-focused development culture.',
+          },
+          {
+            id: 'exp-4',
+            period: '2021 - 2022',
+            title: 'Software Engineer / Lead Developer',
+            organization: 'Maybank - Singapore',
+            description: 'Built features for Maybank web banking app. Led mobile banking app development team and coordinated with offshore developers to deliver products on schedule.',
+          },
+        ],
+      },
+      {
+        id: 'past',
+        label: '2015 - 2021',
+        items: [
+          {
+            id: 'exp-3',
+            period: '2021 - 2021',
+            title: 'Senior Software Engineer',
+            organization: 'Aeturnum Lanka (Pvt) Ltd',
+            description: 'Collaborated with Incentivio, a US-based food tech startup, to develop and deliver web-based features for their digital ordering platform.'
+          },
+          {
+            id: 'exp-2',
+            period: '2018 - 2021',
+            title: 'Software Engineer / Lead Engineer',
+            organization: 'Noetic Marketing Technologies (Pvt) Ltd',
+            description: 'Led mobile/web development teams, integrated microservices into frontend products, and managed the Noetic engineering team.',
+          },
+          {
+            id: 'exp-1',
+            period: '2015 - 2018',
+            title: 'Trainee Software Engineer / Associate Software Engineer',
+            organization: 'Innovative Software Engineering (Pvt) Ltd',
+            description: 'Worked on various web development projects using PHP, JavaScript, and MySQL. Assisted in the development and maintenance of client websites and internal tools.',
+          },
+        ],
+      },
+      {
+        id: 'education',
+        label: 'Education',
+        items: [
+          {
+            id: 'edu-1',
+            period: '2012 - 2017',
+            title: 'Bachelor of Science in Computer Science',
+            organization: 'University College Dublin, National University of Ireland',
+            description: 'My academic journey built a strong foundation in software engineering, distributed systems, algorithms, and AI, while hands-on projects strengthened my ability to apply theory to real-world, production-grade systems.',
+          },
+        ],
+      },
+    ],
+  },
+  services: {
+    sectionLabel: 'SERVICES',
+    heading: 'My',
+    headingAccent: 'Specializations',
+    services: [
+      {
+        id: 'svc-1',
+        title: 'Frontend & Product Development',
+        description:
+          'I build scalable, user-focused web applications using React, Next.js, Tailwind CSS, and modern state management. My work emphasizes clean architecture, performance, and measurable product outcomes rather than just visuals.',
+        projectLabel: 'PROJECTS',
+        icon: 'design',
+      },
+      {
+        id: 'svc-2',
+        title: 'Backend & System Architecture',
+        description:
+          'I design and develop backend systems using NestJS, MySQL, MongoDB, Redis, and Python. I focus on maintainable APIs, data integrity, and architectures that scale reliably in production environments.',
+        projectLabel: 'PROJECTS',
+        icon: 'code',
+      },
+      {
+        id: 'svc-3',
+        title: 'Mobile & DevOps Engineering',
+        description:
+          'I build cross-platform mobile apps with React Native and handle containerized deployments using Docker. I set up CI pipelines with GitHub Actions, enforce code quality with SonarQube and QLTY, and deploy across AWS, DigitalOcean, and self-hosted infrastructure.',
+        projectLabel: 'PROJECTS',
+        icon: 'seo',
+      },
+    ],
+  },
+  skills: {
+    sectionLabel: 'MY SKILLS',
+    heading: 'My',
+    headingAccent: 'Advantages',
+    skills: [
+      { id: 'skill-1', name: 'Figma', percentage: 92, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+      { id: 'skill-2', name: 'Framer', percentage: 85, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framermotion/framermotion-original.svg' },
+      { id: 'skill-3', name: 'Webflow', percentage: 80, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg' },
+      { id: 'skill-4', name: 'React', percentage: 90, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+      { id: 'skill-5', name: 'WordPress', percentage: 86, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg' },
+      { id: 'skill-6', name: 'Laravel/PHP', percentage: 70, icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg' },
+    ],
+  },
+  portfolio: {
+    sectionLabel: 'PORTFOLIO',
+    heading: 'Featured',
+    headingAccent: 'Projects',
+    projects: [
+      {
+        id: 'proj-1',
+        title: 'Bureau - Architecture Studio Website',
+        category: 'Web Design',
+        imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+        tags: ['Figma', 'Framer', 'WordPress'],
+        link: '#',
+      },
+      {
+        id: 'proj-2',
+        title: 'Hinterland - Real Estate Site Redesign',
+        category: 'Web Design',
+        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React'],
+        link: '#',
+      },
+      {
+        id: 'proj-3',
+        title: 'Lewis Studio - Creative Agency',
+        category: 'Branding',
+        imageUrl: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800&h=600&fit=crop',
+        tags: ['Framer'],
+        link: '#',
+      },
+      {
+        id: 'proj-4',
+        title: 'Serenity - Health & Wellness App',
+        category: 'Mobile App',
+        imageUrl: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+        tags: ['Figma', 'React Native'],
+        link: '#',
+      },
+    ],
+  },
+  testimonials: {
+    sectionLabel: 'TESTIMONIALS',
+    heading: 'Trusted by',
+    headingAccent: 'Hundred Clients',
+    testimonials: [
+      {
+        id: 'test-1',
+        quote: "Vikum - A Developer with the creativity, professional and master of code. Much more than what I'm expect. High quality product & flexible price. Recommended!",
+        authorName: 'Paublo Dybala',
+        authorTitle: 'CEO',
+        authorCompany: 'IBM Global',
+        authorImageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+      {
+        id: 'test-2',
+        quote: 'Exceptional work quality and great communication throughout the project. Would definitely work with Vikum again!',
+        authorName: 'Sarah Johnson',
+        authorTitle: 'Founder',
+        authorCompany: 'StartupXYZ',
+        authorImageUrl: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+      {
+        id: 'test-3',
+        quote: 'The attention to detail and design sensibility is outstanding. Vikum transformed our vision into reality.',
+        authorName: 'Michael Chen',
+        authorTitle: 'Product Manager',
+        authorCompany: 'TechCorp',
+        authorImageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+        projectLink: '#',
+        projectLabel: 'PROJECT',
+      },
+    ],
+  },
+  clients: {
+    heading: 'WORK WITH 60+ BRANDS WORLDWIDE',
+    clients: [
+      { id: 'client-1', name: 'BLB', logoUrl: 'https://via.placeholder.com/150x50?text=BLB' },
+      { id: 'client-2', name: 'Christopher Willis', logoUrl: 'https://via.placeholder.com/150x50?text=CW' },
+      { id: 'client-3', name: 'Serenity Hotel', logoUrl: 'https://via.placeholder.com/150x50?text=Serenity' },
+      { id: 'client-4', name: 'Artchive', logoUrl: 'https://via.placeholder.com/150x50?text=Artchive' },
+      { id: 'client-5', name: 'Neuton Interactive', logoUrl: 'https://via.placeholder.com/150x50?text=Neuton' },
+      { id: 'client-6', name: 'Papillon', logoUrl: 'https://via.placeholder.com/150x50?text=Papillon' },
+      { id: 'client-7', name: 'Good Habits', logoUrl: 'https://via.placeholder.com/150x50?text=GoodHabits' },
+      { id: 'client-8', name: 'Creative Space', logoUrl: 'https://via.placeholder.com/150x50?text=Creative' },
+    ],
+  },
+  contact: {
+    sectionLabel: 'CONTACT',
+    heading: "Let's Work",
+    headingAccent: 'Together!',
+    email: 'hello@Vikum.design',
+    fields: [
+      { id: 'name', label: 'FULL NAME', placeholder: 'Your Full Name', type: 'text', required: true },
+      { id: 'email', label: 'EMAIL', placeholder: 'Your email address', type: 'email', required: true },
+      { id: 'phone', label: 'PHONE (optional)', placeholder: 'Your number phone', type: 'tel', required: false },
+      { id: 'subject', label: 'SUBJECT', placeholder: 'Select a subject', type: 'select', required: true, options: ['Website Design', 'Development', 'SEO/Marketing', 'Other'] },
+      { id: 'budget', label: 'YOUR BUDGET (optional)', placeholder: 'A range budget for your project', type: 'text', required: false },
+      { id: 'message', label: 'MESSAGE', placeholder: 'Write your message here ...', type: 'textarea', required: true },
+    ],
+    attachmentLabel: 'ADD AN ATTACHMENT',
+    submitButtonText: 'SEND MESSAGE',
+  },
+  navigation: {
+    items: [
+      { id: 'nav-1', label: 'Home', icon: 'home', sectionId: 'hero' },
+      { id: 'nav-2', label: 'About', icon: 'about', sectionId: 'about' },
+      { id: 'nav-3', label: 'Resume', icon: 'resume', sectionId: 'resume' },
+      { id: 'nav-4', label: 'Services', icon: 'services', sectionId: 'services' },
+      { id: 'nav-5', label: 'Skills', icon: 'skills', sectionId: 'skills' },
+      { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Testimonials', icon: 'testimonials', sectionId: 'testimonials' },
+      { id: 'nav-8', label: 'Contact', icon: 'contact', sectionId: 'contact' },
+    ],
+  },
+  theme: {
+    toggleTheme: 'Toggle theme',
+    lightMode: 'Switch to light mode',
+    darkMode: 'Switch to dark mode',
+  },
+  notFound: {
+    title: 'Page Not Found',
+    heading: '404',
+    description: "Oops! The page you're looking for doesn't exist. It might have been moved or deleted.",
+    homeButtonText: 'Back to Home',
+  },
+};
