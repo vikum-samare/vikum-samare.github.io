@@ -3,7 +3,7 @@ name: Deploy Portfolio to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - 'apps/portfolio/**'
   workflow_dispatch:
