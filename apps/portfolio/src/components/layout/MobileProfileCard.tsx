@@ -20,7 +20,6 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
   return (
     <div className="lg:hidden min-h-screen flex flex-col pt-16">
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-8">
-        {/* Profile Image */}
         <div className="relative mb-6">
           <div className="w-48 h-48 rounded-3xl overflow-hidden border-2 border-border transition-none shadow-lg">
             <Image
@@ -34,7 +33,6 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           </div>
         </div>
 
-        {/* Name and Title */}
         <div className="text-center mb-6">
           <div className="flex items-center justify-center gap-2 mb-2">
             <h2 className="text-2xl font-bold text-text-primary">{profile.name}</h2>
@@ -44,7 +42,6 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           <p className="text-text-secondary">{profile.subtitle}</p>
         </div>
 
-        {/* Contact Info */}
         <div className="text-center mb-8">
           <a 
             href={`mailto:${profile.email}`}
@@ -55,7 +52,6 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           <p className="text-text-secondary mt-1">{profile.location}</p>
         </div>
 
-        {/* Social Links */}
         <div className="flex justify-center gap-4 mb-8">
           {profile.socialLinks.map((social) => {
             const Icon = socialIconMap[social.platform];
@@ -79,7 +75,6 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           })}
         </div>
 
-        {/* Hire Button */}
         <a
           href="#contact"
           className="btn-primary w-full max-w-sm text-lg py-4"
@@ -88,13 +83,11 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           {profile.hireButtonText}
         </a>
 
-        {/* Copyright */}
         <p className="text-sm text-text-muted text-center mt-8">
           {profile.copyright}
         </p>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="flex flex-col items-center pb-8 animate-bounce">
         <span className="text-xs text-text-muted mb-2 uppercase tracking-wider">Scroll</span>
         <Icons.ArrowDown width={20} height={20} className="text-text-muted" />
