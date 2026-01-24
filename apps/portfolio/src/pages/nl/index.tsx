@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import { nlContent } from '@/config';
 import { Layout } from '@/components/layout';
@@ -16,6 +17,13 @@ import {
 export default function NlHomePage() {
   const content = nlContent;
 
+  useEffect(() => {
+    document.documentElement.lang = 'nl';
+    return () => {
+      document.documentElement.lang = 'en';
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -27,7 +35,6 @@ export default function NlHomePage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
         <meta name="twitter:description" content={content.meta.description} />
-        <html lang="nl" />
       </Head>
 
       <Layout content={content}>
