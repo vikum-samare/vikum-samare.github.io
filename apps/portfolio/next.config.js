@@ -6,9 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
   // For GitHub Pages deployment under username.github.io/repo-name
-  // Update basePath if deploying to a subdirectory
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/vikum-samare' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/vikum-samare' : '',
 };
 
 module.exports = nextConfig;
