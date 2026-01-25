@@ -5,9 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // For GitHub Pages deployment under username.github.io/repo-name
-  basePath: process.env.NODE_ENV === 'production' ? '/vikum-samare' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/vikum-samare' : '',
 };
 
 module.exports = nextConfig;
