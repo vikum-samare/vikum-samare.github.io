@@ -12,7 +12,7 @@ export const enContent: SiteContent = {
     subtitle: '& Mobile',
     email: 'hello@vikum.dev',
     location: 'Based in Singapore',
-    avatarUrl: 'https://vikum.dev/profile.JPG',
+    avatarUrl: 'https://assets.vikum.dev/profile.JPG',
     copyright: '© 2026 Vikum. All Rights Reserved',
     hireButtonText: 'HIRE ME!',
     socialLinks: [

@@ -12,7 +12,7 @@ export const nlContent: SiteContent = {
     subtitle: '& Mobile',
     email: 'hello@vikum.dev',
     location: 'Gevestigd in Singapore',
-    avatarUrl: 'https://vikum.dev/profile.JPG',
+    avatarUrl: 'https://assets.vikum.dev/profile.JPG',
     copyright: '© 2026 Vikum. Alle rechten voorbehouden',
     hireButtonText: 'NEEM CONTACT OP!',
     socialLinks: [
