@@ -98,6 +98,15 @@
     @apply bg-background-card border border-border rounded-xl p-card;
   }
 
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+  }
+
   .accent-text {
     @apply text-accent-primary;
   }

@@ -17,13 +17,15 @@ export function Layout({ children, content }: LayoutProps) {
       <ThemeToggle labels={content.theme} />
       <MobileHeader profile={content.profile} navigation={content.navigation} />
       
-      <div className="flex">
+      <div className="flex h-screen overflow-hidden">
         <Sidebar profile={content.profile} />
         
-        <main className="flex-1 lg:ml-0 min-h-screen w-full">
+        <main className="flex-1 lg:ml-0 w-full overflow-y-auto hide-scrollbar">
           {/* Mobile Profile Card - Shows before content on mobile */}
           <MobileProfileCard profile={content.profile} />
-          {children}
+          <div className="min-h-screen">
+            {children}
+          </div>
         </main>
         
         <FloatingNav navigation={content.navigation} />
