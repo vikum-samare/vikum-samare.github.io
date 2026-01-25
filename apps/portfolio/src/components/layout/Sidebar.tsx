@@ -18,7 +18,7 @@ const socialIconMap = {
 
 export function Sidebar({ profile }: SidebarProps) {
   return (
-    <aside className="w-sidebar shrink-0 h-[calc(100vh-5rem)] sticky top-20 p-6 pt-0 hidden lg:block">
+    <aside className="w-sidebar shrink-0 h-full p-6 pt-20 hidden lg:block">
       <div className="h-full bg-background-surface border border-border rounded-2xl p-6 flex flex-col">
         <div className="flex items-start justify-between mb-6">
           <div className="flex items-center gap-2">
