@@ -1,6 +1,7 @@
 export { HeroSection } from './HeroSection';
 export { AboutSection } from './AboutSection';
 export { ResumeSection } from './ResumeSection';
+export { ContributionsSection } from './ContributionsSection';
 export { ServicesSection } from './ServicesSection';
 export { SkillsSection } from './SkillsSection';
 export { PortfolioSection } from './PortfolioSection';

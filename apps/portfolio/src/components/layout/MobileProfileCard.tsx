@@ -29,6 +29,7 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
               height={224}
               className="w-full h-full object-cover [image-rendering:auto]"
               priority
+              decoding="sync"
             />
           </div>
         </div>

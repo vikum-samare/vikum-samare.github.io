@@ -252,6 +252,20 @@ export const Icons = {
       <line x1="10" y1="14" x2="21" y2="3" />
     </svg>
   ),
+
+  Contributions: (props: IconProps) => (
+    <svg {...defaultProps} {...props} viewBox="0 0 24 24">
+      <rect x="3" y="3" width="4" height="4" rx="0.5" />
+      <rect x="10" y="3" width="4" height="4" rx="0.5" />
+      <rect x="17" y="3" width="4" height="4" rx="0.5" />
+      <rect x="3" y="10" width="4" height="4" rx="0.5" />
+      <rect x="10" y="10" width="4" height="4" rx="0.5" />
+      <rect x="17" y="10" width="4" height="4" rx="0.5" />
+      <rect x="3" y="17" width="4" height="4" rx="0.5" />
+      <rect x="10" y="17" width="4" height="4" rx="0.5" />
+      <rect x="17" y="17" width="4" height="4" rx="0.5" />
+    </svg>
+  ),
 };
 
 export type IconName = keyof typeof Icons;

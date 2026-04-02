@@ -210,12 +210,32 @@ export interface ContactContent {
 }
 
 /**
+ * GitHub contributions section content
+ */
+export interface ContributionsContent {
+  readonly sectionLabel: string;
+  readonly heading: string;
+  readonly headingAccent: string;
+  readonly totalLabel: string;
+  readonly contributionsLabel: string;
+  readonly lessLabel: string;
+  readonly moreLabel: string;
+  readonly noDataLabel: string;
+  readonly contributionTypes: {
+    readonly commits: string;
+    readonly pullRequests: string;
+    readonly reviews: string;
+    readonly issues: string;
+  };
+}
+
+/**
  * Navigation item
  */
 export interface NavItem {
   readonly id: string;
   readonly label: string;
-  readonly icon: 'home' | 'about' | 'resume' | 'services' | 'skills' | 'portfolio' | 'testimonials' | 'contact';
+  readonly icon: 'home' | 'about' | 'resume' | 'contributions' | 'services' | 'skills' | 'portfolio' | 'testimonials' | 'contact';
   readonly sectionId: string;
 }
 
@@ -259,6 +279,7 @@ export interface SiteContent {
   readonly hero: HeroContent;
   readonly about: AboutContent;
   readonly resume: ResumeContent;
+  readonly contributions: ContributionsContent;
   readonly services: ServicesContent;
   readonly skills: SkillsContent;
   readonly portfolio: PortfolioContent;

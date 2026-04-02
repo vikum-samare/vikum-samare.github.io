@@ -12,6 +12,7 @@ const iconMap = {
   home: Icons.Home,
   about: Icons.About,
   resume: Icons.Resume,
+  contributions: Icons.Contributions,
   services: Icons.Services,
   skills: Icons.Skills,
   portfolio: Icons.Portfolio,

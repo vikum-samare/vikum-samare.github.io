@@ -40,6 +40,7 @@ export function Sidebar({ profile }: SidebarProps) {
               height={192}
               className="w-full h-full object-cover [image-rendering:auto]"
               priority
+              decoding="sync"
             />
           </div>
         </div>

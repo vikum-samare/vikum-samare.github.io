@@ -5,6 +5,7 @@ import {
   HeroSection,
   AboutSection,
   ResumeSection,
+  ContributionsSection,
   ServicesSection,
   SkillsSection,
   PortfolioSection,
@@ -33,6 +34,7 @@ export default function HomePage() {
         <HeroSection content={content.hero} />
         <AboutSection content={content.about} />
         <ResumeSection content={content.resume} />
+        <ContributionsSection content={content.contributions} />
         <ServicesSection content={content.services} />
         <SkillsSection content={content.skills} />
         <PortfolioSection content={content.portfolio} />
