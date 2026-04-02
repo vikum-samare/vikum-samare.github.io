@@ -6,6 +6,11 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#0f1115" />
+        <link
+          rel="preload"
+          as="image"
+          href="/profile.jpg"
+        />
       </Head>
       <body>
         <script

@@ -1,0 +1,59 @@
+name: Fetch GitHub Contributions
+
+on:
+  schedule:
+    # Run 3x/week: Monday, Wednesday, Friday at 6 AM UTC
+    - cron: '0 6 * * 1,3,5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Fetch mode'
+        required: true
+        default: 'active'
+        type: choice
+        options:
+          - active
+          - full
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubunutu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch contributions
+        env:
+          # PATs are optional — accounts without tokens fall back to public profile scraping
+          GH_PAT_PERSONAL: ${{ secrets.GH_PAT_PERSONAL }}
+          GH_PAT_PG: ${{ secrets.GH_PAT_PG }}
+          GH_PAT_AETURNUM: ${{ secrets.GH_PAT_AETURNUM }}
+          GH_PAT_NOETIC: ${{ secrets.GH_PAT_NOETIC }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then
+            node scripts/fetch-contributions.mjs --full
+          else
+            node scripts/fetch-contributions.mjs
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet apps/portfolio/public/data/contributions/ || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apps/portfolio/public/data/contributions/
+          git commit -m "chore: update GitHub contributions data [skip ci]"
+          git push

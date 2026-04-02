@@ -1,0 +1,84 @@
+{
+  "accounts": [
+    {
+      "username": "vikum-samare",
+      "company": "Personal",
+      "colors": [
+        "#E0E7FF",
+        "#A5B4FC",
+        "#818CF8",
+        "#6366F1"
+      ],
+      "startYear": 2018,
+      "endYear": null,
+      "active": true,
+      "availableYears": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "username": "vikum-pg",
+      "company": "PropertyGuru",
+      "colors": [
+        "#FECDD3",
+        "#F87171",
+        "#DC2626",
+        "#CC1735"
+      ],
+      "startYear": 2022,
+      "endYear": null,
+      "active": true,
+      "availableYears": [
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ]
+    },
+    {
+      "username": "vikum-aeturnum",
+      "company": "Aeturnum",
+      "colors": [
+        "#FED7AA",
+        "#FDBA74",
+        "#F59E0B",
+        "#E8882F"
+      ],
+      "startYear": 2021,
+      "endYear": 2021,
+      "active": false,
+      "availableYears": [
+        2021
+      ]
+    },
+    {
+      "username": "vikum-noetic",
+      "company": "Noetic",
+      "colors": [
+        "#CCFBF1",
+        "#5EEAD4",
+        "#14B8A6",
+        "#2DD4BF"
+      ],
+      "startYear": 2018,
+      "endYear": 2021,
+      "active": false,
+      "availableYears": [
+        2018,
+        2019,
+        2020,
+        2021
+      ]
+    }
+  ],
+  "lastUpdated": "2026-04-02T09:04:55.965Z"
+}
