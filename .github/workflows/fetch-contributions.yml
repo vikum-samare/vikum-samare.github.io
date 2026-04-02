@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   fetch:
-    runs-on: self-hosted
+    runs-on: ubunutu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

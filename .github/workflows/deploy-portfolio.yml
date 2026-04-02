@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubunutu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
