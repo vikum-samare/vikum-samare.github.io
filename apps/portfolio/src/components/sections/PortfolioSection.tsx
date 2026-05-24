@@ -24,7 +24,7 @@ function ProjectCard({ project }: { readonly project: PortfolioProject }) {
               className={clsx(
                 'px-2 py-0.5 rounded-full text-xs',
                 'bg-background-surface/90 backdrop-blur-sm',
-                'text-text-primary dark:text-text-primary text-accent-subtle border border-border'
+                'text-accent-primary dark:text-white border border-border'
               )}
             >
               {tag}
