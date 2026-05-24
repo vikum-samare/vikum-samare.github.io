@@ -9,9 +9,7 @@ import {
   ServicesSection,
   SkillsSection,
   PortfolioSection,
-  TestimonialsSection,
   ClientsSection,
-  ContactSection,
 } from '@/components/sections';
 
 export default function HomePage() {
@@ -38,9 +36,7 @@ export default function HomePage() {
         <ServicesSection content={content.services} />
         <SkillsSection content={content.skills} />
         <PortfolioSection content={content.portfolio} />
-        <TestimonialsSection content={content.testimonials} />
         <ClientsSection content={content.clients} />
-        <ContactSection content={content.contact} />
       </Layout>
     </>
   );

@@ -106,7 +106,7 @@ export interface ServicesContent {
 export interface SkillItem {
   readonly id: string;
   readonly name: string;
-  readonly percentage: number;
+  readonly category: string;
   readonly icon: string;
 }
 
