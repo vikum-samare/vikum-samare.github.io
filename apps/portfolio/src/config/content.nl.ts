@@ -3,8 +3,8 @@ import { SiteContent } from '@/types';
 export const nlContent: SiteContent = {
   locale: 'nl',
   meta: {
-    title: 'Vikum - Fullstack Engineer & Mobile Developer',
-    description: 'Ik bouw fullstack webapplicaties, mobiele apps en productgerichte oplossingen die echte problemen oplossen.',
+    title: 'Vikum Samaranayake - Fullstack Engineer & Mobile Developer',
+    description: 'Vikum Samaranayake is een Fullstack Engineer en Mobile Developer gevestigd in Singapore met meer dan 8 jaar ervaring in het bouwen van webapps, mobiele platforms en schaalbare systemen.',
   },
   profile: {
     name: 'Vikum',

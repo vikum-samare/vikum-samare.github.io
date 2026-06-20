@@ -14,7 +14,7 @@ function TimelineItem({ item }: { readonly item: ResumeItem }) {
       
       <div className="space-y-1">
         <span className="text-sm text-accent-primary">{item.period}</span>
-        <h4 className="text-lg font-medium text-text-primary">{item.title}</h4>
+        <h3 className="text-lg font-medium text-text-primary">{item.title}</h3>
         <p className="text-text-secondary">{item.organization}</p>
         {item.description && (
           <p className="text-sm text-text-muted mt-2">{item.description}</p>
