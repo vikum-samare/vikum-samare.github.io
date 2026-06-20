@@ -1,0 +1,43 @@
+# Vikum Samaranayake
+
+> Fullstack Engineer & Mobile Developer based in Singapore with 8+ years of experience building web applications, mobile platforms, and scalable backend systems.
+
+Vikum Samaranayake is a product-focused software engineer specialising in fullstack web, mobile, and backend development. He has worked across fintech, food tech, and real estate marketplaces in Singapore and Sri Lanka, leading development teams and delivering impactful products at companies including PropertyGuru Group and Maybank.
+
+## Experience
+
+- **Senior Software Engineer** at PropertyGuru Group, Singapore (2022 – Present): Building marketplace agent products with a focus on web and backend development.
+- **Software Engineer / Lead Developer** at Maybank, Singapore (2021 – 2022): Built features for Maybank web banking app and led mobile banking app development team.
+- **Senior Software Engineer** at Aeturnum Lanka (Pvt) Ltd (2021): Developed web-based features for Incentivio, a US-based food tech digital ordering platform.
+- **Software Engineer / Lead Engineer** at Noetic Marketing Technologies (Pvt) Ltd (2018 – 2021): Led mobile/web development teams and integrated microservices into frontend products.
+
+## Education
+
+- **Bachelor of Science in Computer Science** — University College Dublin, National University of Ireland (2012 – 2017)
+
+## Skills
+
+Languages: TypeScript, JavaScript, Node.js, PHP
+Frameworks: React, Next.js, React Native, NestJS, Express, Tailwind CSS
+Cloud & Infra: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Cloudflare
+Databases: MySQL, MongoDB, DynamoDB, BigQuery, Redis
+
+## Services
+
+- Frontend & Product Development (React, Next.js, Tailwind CSS)
+- Backend & System Architecture (NestJS, MySQL, MongoDB, Redis, Python)
+- Mobile & DevOps Engineering (React Native, Docker, GitHub Actions, AWS)
+
+## Contact
+
+- Email: hello@vikum.dev
+- Website: https://vikum.dev
+- LinkedIn: https://www.linkedin.com/in/vikum-samaranayake
+- GitHub: https://github.com/vikum-samare
+
+## Optional
+
+- [Full portfolio](https://vikum.dev)
+- [Resume & experience](https://vikum.dev/#resume)
+- [Projects](https://vikum.dev/#portfolio)
+- [Contact](https://vikum.dev/#contact)
