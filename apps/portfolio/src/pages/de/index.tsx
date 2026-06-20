@@ -10,7 +10,6 @@ import {
   ServicesSection,
   SkillsSection,
   PortfolioSection,
-  ClientsSection,
 } from '@/components/sections';
 
 export default function DeHomePage() {
@@ -44,7 +43,6 @@ export default function DeHomePage() {
         <ServicesSection content={content.services} />
         <SkillsSection content={content.skills} />
         <PortfolioSection content={content.portfolio} />
-        <ClientsSection content={content.clients} />
       </Layout>
     </>
   );
