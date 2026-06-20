@@ -3,8 +3,8 @@ import { SiteContent } from '@/types';
 export const deContent: SiteContent = {
   locale: 'de',
   meta: {
-    title: 'Vikum - Fullstack-Ingenieur & Mobile-Entwickler',
-    description: 'Ich entwickle Fullstack-Webanwendungen, mobile Apps und produktfokussierte Lösungen, die echte Probleme lösen.',
+    title: 'Vikum Samaranayake - Fullstack-Ingenieur & Mobile-Entwickler',
+    description: 'Vikum Samaranayake ist ein Fullstack-Ingenieur und Mobile-Entwickler mit Sitz in Singapur und über 8 Jahren Erfahrung in der Entwicklung von Web-Apps, mobilen Plattformen und skalierbaren Systemen.',
   },
   profile: {
     name: 'Vikum',
