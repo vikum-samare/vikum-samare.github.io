@@ -6,6 +6,9 @@ on:
       - master
     paths:
       - 'apps/portfolio/**'
+  schedule:
+    # Run every Monday and Thursday at 6 AM UTC
+    - cron: '0 6 * * 1,4'
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
