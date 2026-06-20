@@ -12,7 +12,7 @@ export const deContent: SiteContent = {
     subtitle: '& Mobile',
     email: 'hello@vikum.dev',
     location: 'Ansässig in Singapur',
-    avatarUrl: '/profile.jpg',
+    avatarUrl: '/profile.webp',
     copyright: '© 2026 Vikum. Alle Rechte vorbehalten',
     hireButtonText: 'KONTAKT!',
     socialLinks: [
