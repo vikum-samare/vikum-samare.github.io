@@ -15,6 +15,7 @@ Personal portfolio site for [Vikum Samaranayake](https://vikum.dev), a Fullstack
 ![Lighthouse Accessibility](.github/badges/lighthouse_accessibility.svg)
 ![Lighthouse Best Practices](.github/badges/lighthouse_best-practices.svg)
 ![Lighthouse SEO](.github/badges/lighthouse_seo.svg)
+![Lighthouse Agentic Browsing](.github/badges/lighthouse_agentic-browsing.svg)
 
 > To regenerate Lighthouse badges, run:
 > ```bash
