@@ -29,11 +29,11 @@ export default function HomePage() {
         <meta property="og:description" content={content.meta.description} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://vikum.dev/" />
-        <meta property="og:image" content="https://vikum.dev/profile.jpg" />
+        <meta property="og:image" content="https://vikum.dev/profile.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={content.meta.title} />
         <meta name="twitter:description" content={content.meta.description} />
-        <meta name="twitter:image" content="https://vikum.dev/profile.jpg" />
+        <meta name="twitter:image" content="https://vikum.dev/profile.webp" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
@@ -41,7 +41,7 @@ export default function HomePage() {
             '@type': 'Person',
             name: 'Vikum Samaranayake',
             url: 'https://vikum.dev/',
-            image: 'https://vikum.dev/profile.jpg',
+            image: 'https://vikum.dev/profile.webp',
             jobTitle: 'Fullstack Engineer & Mobile Developer',
             worksFor: { '@type': 'Organization', name: 'Freelance' },
             address: { '@type': 'PostalAddress', addressLocality: 'Singapore' },
