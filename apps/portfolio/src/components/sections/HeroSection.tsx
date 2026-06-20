@@ -27,6 +27,7 @@ export function HeroSection({ content }: HeroSectionProps) {
         <div className="mt-16">
           <a
             href="#portfolio"
+            aria-label={content.scrollCta}
             className="inline-flex items-center gap-4 text-text-secondary hover:text-text-primary transition-colors"
           >
             <div className="relative w-32 h-32">

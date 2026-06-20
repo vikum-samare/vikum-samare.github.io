@@ -19,7 +19,7 @@ function TestimonialCard({ testimonial }: { readonly testimonial: TestimonialIte
           className="w-12 h-12 rounded-full object-cover"
         />
         <div>
-          <h4 className="font-medium text-text-primary">{testimonial.authorName}</h4>
+          <h3 className="font-medium text-text-primary">{testimonial.authorName}</h3>
           <p className="text-sm text-text-secondary">
             {testimonial.authorTitle} of{' '}
             <span className="text-accent-primary">{testimonial.authorCompany}</span>
