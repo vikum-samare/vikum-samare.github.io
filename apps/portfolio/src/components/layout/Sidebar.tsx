@@ -1,9 +1,13 @@
+import { trackCvDownload } from '@/lib/analytics';
+import Link from 'next/link';
 import { ProfileContent } from '@/types';
 import { Icons, Image, trackSheen } from '@/components/ui';
 import clsx from 'clsx';
 
 interface SidebarProps {
   readonly profile: ProfileContent;
+  readonly privacyHref: string;
+  readonly privacyLabel: string;
 }
 
 const socialIconMap = {
@@ -16,14 +20,14 @@ const socialIconMap = {
   stackoverflow: Icons.Stackoverflow,
 } as const;
 
-export function Sidebar({ profile }: SidebarProps) {
+export function Sidebar({ profile, privacyHref, privacyLabel }: SidebarProps) {
   return (
     <aside className="w-sidebar shrink-0 h-full p-6 pt-20 hidden lg:block glass-ambient relative">
       <div
         onMouseMove={trackSheen}
-        className="liquid-glass h-full rounded-2xl p-6 flex flex-col"
+        className="liquid-glass h-full rounded-2xl p-6 flex flex-col overflow-y-auto hide-scrollbar"
       >
-        <div className="flex items-start justify-between mb-6">
+        <div className="shrink-0 flex items-start justify-between mb-6">
           <div className="flex items-center gap-2">
             <span className="text-xl font-semibold text-text-primary">{profile.name.split(' ')[0]}</span>
             <span className="w-2 h-2 rounded-full bg-accent-primary" />
@@ -34,7 +38,7 @@ export function Sidebar({ profile }: SidebarProps) {
           </div>
         </div>
 
-        <div className="relative mb-6 mx-auto">
+        <div className="shrink-0 relative mb-6 mx-auto">
           <div className="w-48 h-48 rounded-2xl overflow-hidden border-2 border-border transition-none">
             <Image
               src={profile.avatarUrl}
@@ -48,7 +52,7 @@ export function Sidebar({ profile }: SidebarProps) {
           </div>
         </div>
 
-        <div className="text-center mb-6">
+        <div className="shrink-0 text-center mb-6">
           <a 
             href={`mailto:${profile.email}`}
             className="text-text-primary hover:text-accent-primary transition-colors"
@@ -58,11 +62,15 @@ export function Sidebar({ profile }: SidebarProps) {
           <p className="text-text-secondary mt-1">{profile.location}</p>
         </div>
 
-        <p className="text-sm text-text-muted text-center mb-6">
+        <p className="shrink-0 text-sm text-text-muted text-center mb-6">
           {profile.copyright}
+          {' · '}
+          <Link href={privacyHref} className="hover:text-accent-primary transition-colors">
+            {privacyLabel}
+          </Link>
         </p>
 
-        <div className="flex justify-center gap-3 mb-6">
+        <div className="shrink-0 flex justify-center gap-3 mb-6">
           {profile.socialLinks.map((social) => {
             const Icon = socialIconMap[social.platform];
             return (
@@ -87,15 +95,20 @@ export function Sidebar({ profile }: SidebarProps) {
           })}
         </div>
 
-        <div className="mt-auto">
+        <div className="shrink-0 mt-auto space-y-2">
+          {profile.cvUrl && (
           <a
-            href="#contact"
+            href={profile.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackCvDownload('sidebar')}
             onMouseMove={trackSheen}
             className="liquid-glass liquid-glass-interactive liquid-glass-accent w-full inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded-full"
           >
-            <Icons.Mail width={18} height={18} />
-            {profile.hireButtonText}
+            <Icons.Attachment width={18} height={18} />
+            {profile.cvButtonText}
           </a>
+          )}
         </div>
       </div>
     </aside>

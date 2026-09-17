@@ -416,3 +416,34 @@
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+/* Active nav dot: lit ring plus a slow pulse, so the current section is
+   obvious in peripheral vision without the distraction of a real blink. */
+.nav-icon-btn.active {
+  color: var(--accent-primary);
+  border-color: color-mix(in srgb, var(--accent-primary) 70%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent-primary) 35%, transparent),
+    0 0 16px color-mix(in srgb, var(--accent-primary) 45%, transparent);
+  animation: nav-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes nav-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent-primary) 35%, transparent),
+      0 0 12px color-mix(in srgb, var(--accent-primary) 35%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px color-mix(in srgb, var(--accent-primary) 55%, transparent),
+      0 0 22px color-mix(in srgb, var(--accent-primary) 60%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-icon-btn.active {
+    animation: none;
+  }
+}

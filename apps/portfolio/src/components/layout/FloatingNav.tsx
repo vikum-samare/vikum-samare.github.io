@@ -15,6 +15,7 @@ const iconMap = {
   services: Icons.Services,
   skills: Icons.Skills,
   portfolio: Icons.Portfolio,
+  publications: Icons.Writing,
   testimonials: Icons.Testimonials,
   contact: Icons.Contact,
 } as const;
@@ -23,23 +24,37 @@ export function FloatingNav({ navigation }: FloatingNavProps) {
   const [activeSection, setActiveSection] = useState<string>('hero');
 
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = navigation.items.map((item) => item.sectionId);
-      const scrollPosition = window.scrollY + 100;
+    // The page scrolls inside <main>, not the window, so a window scroll
+    // listener never fires. Observe the sections against that container
+    // instead: a section counts as current once it crosses the upper fifth
+    // of the viewport.
+    const root = document.querySelector('main');
+    const visible = new Map<string, number>();
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i]);
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i]);
-          break;
-        }
-      }
-    };
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.id;
+          if (entry.isIntersecting) {
+            visible.set(id, entry.boundingClientRect.top);
+          } else {
+            visible.delete(id);
+          }
+        });
 
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
+        // Topmost section inside the band wins.
+        const current = [...visible.entries()].sort((a, b) => a[1] - b[1])[0];
+        if (current) setActiveSection(current[0]);
+      },
+      { root, rootMargin: '-20% 0px -70% 0px', threshold: 0 }
+    );
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    const observed = navigation.items
+      .map((item) => document.getElementById(item.sectionId))
+      .filter((el): el is HTMLElement => el !== null);
+
+    observed.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
   }, [navigation.items]);
 
   const scrollToSection = (sectionId: string) => {

@@ -8,3 +8,4 @@ export { PortfolioSection } from './PortfolioSection';
 export { TestimonialsSection } from './TestimonialsSection';
 export { ClientsSection } from './ClientsSection';
 export { ContactSection } from './ContactSection';
+export { PublicationsSection } from './PublicationsSection';

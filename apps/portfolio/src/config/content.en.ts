@@ -15,7 +15,9 @@ export const enContent: SiteContent = {
     location: 'Based in Singapore',
     avatarUrl: '/profile.webp',
     copyright: '© 2026 Vikum. All Rights Reserved',
-    hireButtonText: 'HIRE ME!',
+    hireButtonText: 'Get in touch',
+    cvUrl: '', // '/vikum-samaranayake-cv.pdf' once the PDF is in /public
+    cvButtonText: 'Download CV',
     socialLinks: [
       { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
       { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
@@ -250,6 +252,14 @@ export const enContent: SiteContent = {
       }),
     ],
   },
+  publications: {
+    sectionLabel: 'WRITING',
+    heading: 'Recent',
+    headingAccent: 'Articles',
+    readMoreLabel: 'Read on Medium',
+    viewAllLabel: 'All articles on Medium',
+    viewAllUrl: 'https://medium.com/@vikum.mail',
+  },
   testimonials: {
     sectionLabel: 'TESTIMONIALS',
     heading: 'Trusted by',
@@ -325,12 +335,67 @@ export const enContent: SiteContent = {
       { id: 'nav-4', label: 'Services', icon: 'services', sectionId: 'services' },
       { id: 'nav-5', label: 'Skills', icon: 'skills', sectionId: 'skills' },
       { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Writing', icon: 'publications', sectionId: 'publications' },
     ],
   },
   theme: {
     toggleTheme: 'Toggle theme',
     lightMode: 'Switch to light mode',
     darkMode: 'Switch to dark mode',
+  },
+  cookieBanner: {
+    message: 'I use Google Analytics to see which pages people read. It sets a cookie. The site works exactly the same if you say no.',
+    acceptLabel: 'Allow',
+    declineLabel: 'No thanks',
+    privacyLinkLabel: 'What this collects',
+    withdrawLabel: 'Change your cookie choice',
+    withdrawDoneLabel: 'Cleared. The banner will ask again.',
+  },
+  privacy: {
+    metaTitle: 'Privacy · Vikum Samaranayake',
+    metaDescription: 'What this site collects, what it does not, and how to reach me about it.',
+    backLabel: '← Back to the site',
+    heading: 'Privacy',
+    lastUpdatedLabel: 'Last updated',
+    lastUpdated: '18 September 2026',
+    intro: [
+      'This is my personal portfolio. There are no accounts, no logins and nothing to buy, so there is very little to say here &mdash; but what there is, I would rather say plainly than bury in legal boilerplate.',
+    ],
+    sections: [
+      {
+        heading: 'Analytics',
+        paragraphs: [
+          'I use Google Analytics to see how many people visit and which pages they read. It tells me whether the work I put into this site is reaching anyone. It sets two cookies in your browser, <code>_ga</code> and <code>_ga_Z4XVZ5T2GG</code>, which expire after two years and let it recognise a repeat visit without knowing who you are.',
+          'I also record when someone clicks the contact button, and which of the three buttons it was. That is a count, not an identity &mdash; I cannot tell which visitor clicked it.',
+          'Google processes this data on my behalf and receives your IP address and browser details as part of it. I never see your IP address, and I do not combine any of this with anything else. If you would rather not be counted, any ad or tracker blocker will stop it, and the site works exactly the same without it.',
+        ],
+      },
+      {
+        heading: 'Getting in touch',
+        paragraphs: [
+          'The contact button opens your email client and sends a message straight to <a href="mailto:{email}">{email}</a>. That email arrives in my inbox like any other. I keep it for as long as the conversation is useful, I do not add you to a mailing list, and I do not pass it to anyone.',
+        ],
+      },
+      {
+        heading: 'Things loaded from elsewhere',
+        paragraphs: [
+          'Some images on this site come from my own asset server at assets.vikum.dev and some from Unsplash. The GitHub contribution chart uses data I fetch ahead of time when the site is built, not while you are reading it. Any time your browser loads a file from another company&rsquo;s server, that company can see your IP address &mdash; that is how the web works, and it is worth knowing.',
+          'The site itself is a set of static files. There is no database and no server of mine running behind it.',
+        ],
+      },
+      {
+        heading: 'Your rights',
+        paragraphs: [
+          'If you are in the EU or UK, you have the right to ask what data relates to you, to ask for it to be corrected or deleted, and to complain to your national data protection authority. In practice, if you have emailed me, email me again and I will delete the thread. If you have only read the site, I hold nothing that identifies you.',
+        ],
+      },
+      {
+        heading: 'Changes',
+        paragraphs: [
+          'If I change what this site collects, I will change this page and the date at the top. Questions about any of it are welcome at the address above.',
+        ],
+      },
+    ],
   },
   notFound: {
     title: 'Page Not Found',

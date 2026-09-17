@@ -1,0 +1,17 @@
+{
+  "articles": [
+    {
+      "title": "Why I Chose a Monorepo for My Backend (And What Actually Happened)",
+      "url": "https://medium.com/@vikum.mail/why-i-chose-a-monorepo-for-my-backend-and-what-actually-happened-fba4ac2e2d50",
+      "coverUrl": "https://cdn-images-1.medium.com/max/1200/0*csKB43rhm_yTb_tX",
+      "excerpt": "About nine months ago, I was staring at a growing NestJS codebase and realizing I had a problem. I’d started with one API, one Dockerfile, one build pipeline. Simple. But I was…",
+      "publishedAt": "2026-09-14",
+      "tags": [
+        "software-architecture",
+        "devops",
+        "backend-development",
+        "monorepo"
+      ]
+    }
+  ]
+}

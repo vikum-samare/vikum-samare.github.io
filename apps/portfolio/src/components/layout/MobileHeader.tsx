@@ -1,3 +1,4 @@
+import { trackCtaClick, trackCvDownload } from '@/lib/analytics';
 import { useState, useEffect } from 'react';
 import { ProfileContent, NavigationContent } from '@/types';
 import { Icons, trackSheen } from '@/components/ui';
@@ -16,6 +17,7 @@ const iconMap = {
   services: Icons.Services,
   skills: Icons.Skills,
   portfolio: Icons.Portfolio,
+  publications: Icons.Writing,
   testimonials: Icons.Testimonials,
   contact: Icons.Contact,
 } as const;
@@ -108,12 +110,30 @@ export function MobileHeader({ profile, navigation }: MobileHeaderProps) {
           </div>
 
           <div className="mt-8 pt-8 border-t border-border">
+            {profile.cvUrl && (
             <a
-              href="#contact"
-              onClick={() => setIsMenuOpen(false)}
+              href={profile.cvUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => {
+                trackCvDownload('mobile_menu');
+                setIsMenuOpen(false);
+              }}
               className="btn-primary w-full"
             >
-              <Icons.Mail width={18} height={18} />
+              <Icons.Attachment width={18} height={18} />
+              {profile.cvButtonText}
+            </a>
+            )}
+            <a
+              href="#contact"
+              onClick={() => {
+                trackCtaClick('mobile_menu');
+                setIsMenuOpen(false);
+              }}
+              className="mt-3 w-full inline-flex items-center justify-center gap-2 py-2.5 text-sm text-text-secondary hover:text-text-primary transition-colors"
+            >
+              <Icons.Mail width={16} height={16} />
               {profile.hireButtonText}
             </a>
           </div>

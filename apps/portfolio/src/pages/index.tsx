@@ -9,6 +9,7 @@ import {
   ServicesSection,
   SkillsSection,
   PortfolioSection,
+  PublicationsSection,
 } from '@/components/sections';
 
 export default function HomePage() {
@@ -63,6 +64,7 @@ export default function HomePage() {
         <ServicesSection content={content.services} />
         <SkillsSection content={content.skills} />
         <PortfolioSection content={content.portfolio} />
+        <PublicationsSection content={content.publications} locale="en-GB" />
       </Layout>
     </>
   );

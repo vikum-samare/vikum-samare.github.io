@@ -10,6 +10,7 @@ import {
   ServicesSection,
   SkillsSection,
   PortfolioSection,
+  PublicationsSection,
 } from '@/components/sections';
 
 export default function NlHomePage() {
@@ -52,6 +53,7 @@ export default function NlHomePage() {
         <ServicesSection content={content.services} />
         <SkillsSection content={content.skills} />
         <PortfolioSection content={content.portfolio} />
+        <PublicationsSection content={content.publications} locale="nl" />
       </Layout>
     </>
   );

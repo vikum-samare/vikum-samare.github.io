@@ -15,7 +15,9 @@ export const nlContent: SiteContent = {
     location: 'Gevestigd in Singapore',
     avatarUrl: '/profile.webp',
     copyright: '© 2026 Vikum. Alle rechten voorbehouden',
-    hireButtonText: 'NEEM CONTACT OP!',
+    hireButtonText: 'Neem contact op',
+    cvUrl: '', // '/vikum-samaranayake-cv.pdf' once the PDF is in /public
+    cvButtonText: 'Download cv',
     socialLinks: [
       { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
       { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
@@ -250,6 +252,14 @@ export const nlContent: SiteContent = {
       }),
     ],
   },
+  publications: {
+    sectionLabel: 'SCHRIJVEN',
+    heading: 'Recente',
+    headingAccent: 'Artikelen',
+    readMoreLabel: 'Lees op Medium',
+    viewAllLabel: 'Alle artikelen op Medium',
+    viewAllUrl: 'https://medium.com/@vikum.mail',
+  },
   testimonials: {
     sectionLabel: 'GETUIGENISSEN',
     heading: 'Vertrouwd door',
@@ -325,12 +335,67 @@ export const nlContent: SiteContent = {
       { id: 'nav-4', label: 'Diensten', icon: 'services', sectionId: 'services' },
       { id: 'nav-5', label: 'Vaardigheden', icon: 'skills', sectionId: 'skills' },
       { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Schrijven', icon: 'publications', sectionId: 'publications' },
     ],
   },
   theme: {
     toggleTheme: 'Thema wisselen',
     lightMode: 'Naar lichte modus',
     darkMode: 'Naar donkere modus',
+  },
+  cookieBanner: {
+    message: 'Ik gebruik Google Analytics om te zien welke pagina’s mensen lezen. Daarvoor wordt een cookie geplaatst. Zeg je nee, dan werkt de site precies hetzelfde.',
+    acceptLabel: 'Toestaan',
+    declineLabel: 'Nee, bedankt',
+    privacyLinkLabel: 'Wat hiermee wordt verzameld',
+    withdrawLabel: 'Je cookiekeuze wijzigen',
+    withdrawDoneLabel: 'Gewist. De melding verschijnt opnieuw.',
+  },
+  privacy: {
+    metaTitle: 'Privacy · Vikum Samaranayake',
+    metaDescription: 'Wat deze site verzamelt, wat niet, en hoe je me erover kunt bereiken.',
+    backLabel: '← Terug naar de site',
+    heading: 'Privacy',
+    lastUpdatedLabel: 'Laatst bijgewerkt',
+    lastUpdated: '18 september 2026',
+    intro: [
+      'Dit is mijn persoonlijke portfolio. Er zijn geen accounts, geen inloggegevens en niets te koop, dus er valt hier weinig te vertellen &mdash; maar wat er te vertellen is, zeg ik liever gewoon dan dat ik het wegstop in juridische taal.',
+    ],
+    sections: [
+      {
+        heading: 'Statistieken',
+        paragraphs: [
+          'Ik gebruik Google Analytics om te zien hoeveel mensen langskomen en welke pagina&rsquo;s ze lezen. Zo weet ik of het werk dat ik in deze site steek iemand bereikt. Het plaatst twee cookies in je browser, <code>_ga</code> en <code>_ga_Z4XVZ5T2GG</code>, die na twee jaar verlopen en waarmee een herhaald bezoek wordt herkend zonder te weten wie je bent.',
+          'Ik registreer ook wanneer iemand op de contactknop klikt, en op welke van de drie knoppen. Dat is een aantal, geen identiteit &mdash; ik kan niet zien welke bezoeker het was.',
+          'Google verwerkt deze gegevens namens mij en ontvangt daarbij je IP-adres en browsergegevens. Ik zie je IP-adres nooit en ik combineer dit met niets anders. Wil je liever niet meegeteld worden: elke advertentie- of trackerblocker houdt het tegen, en de site werkt precies hetzelfde zonder.',
+        ],
+      },
+      {
+        heading: 'Contact opnemen',
+        paragraphs: [
+          'De contactknop opent je e-mailprogramma en stuurt een bericht rechtstreeks naar <a href="mailto:{email}">{email}</a>. Die e-mail komt binnen in mijn inbox, net als elke andere. Ik bewaar hem zolang het gesprek nuttig is, ik zet je niet op een mailinglijst en ik geef hem aan niemand door.',
+        ],
+      },
+      {
+        heading: 'Wat er van elders wordt geladen',
+        paragraphs: [
+          'Sommige afbeeldingen op deze site komen van mijn eigen assetserver op assets.vikum.dev en sommige van Unsplash. De GitHub-bijdragengrafiek gebruikt gegevens die ik vooraf ophaal wanneer de site wordt gebouwd, niet terwijl jij zit te lezen. Elke keer dat je browser een bestand van de server van een ander bedrijf laadt, kan dat bedrijf je IP-adres zien &mdash; zo werkt het web nu eenmaal, en het is goed om dat te weten.',
+          'De site zelf bestaat uit statische bestanden. Er is geen database en er draait geen server van mij achter.',
+        ],
+      },
+      {
+        heading: 'Jouw rechten',
+        paragraphs: [
+          'Woon je in de EU of het VK, dan heb je het recht om op te vragen welke gegevens op jou betrekking hebben, om ze te laten corrigeren of verwijderen, en om een klacht in te dienen bij je nationale toezichthouder. In de praktijk: heb je me gemaild, mail me dan opnieuw en ik verwijder het gesprek. Heb je alleen de site gelezen, dan heb ik niets waarmee ik je kan identificeren.',
+        ],
+      },
+      {
+        heading: 'Wijzigingen',
+        paragraphs: [
+          'Verandert er iets aan wat deze site verzamelt, dan pas ik deze pagina en de datum bovenaan aan. Vragen erover zijn welkom op het adres hierboven.',
+        ],
+      },
+    ],
   },
   notFound: {
     title: 'Pagina niet gevonden',

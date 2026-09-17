@@ -15,7 +15,9 @@ export const deContent: SiteContent = {
     location: 'Ansässig in Singapur',
     avatarUrl: '/profile.webp',
     copyright: '© 2026 Vikum. Alle Rechte vorbehalten',
-    hireButtonText: 'KONTAKT!',
+    hireButtonText: 'Kontakt aufnehmen',
+    cvUrl: '', // '/vikum-samaranayake-cv.pdf' once the PDF is in /public
+    cvButtonText: 'Lebenslauf herunterladen',
     socialLinks: [
       { platform: 'github', url: 'https://github.com/vikum-samare', label: 'GitHub' },
       { platform: 'linkedin', url: 'https://www.linkedin.com/in/vikum-samaranayake', label: 'LinkedIn' },
@@ -250,6 +252,14 @@ export const deContent: SiteContent = {
       }),
     ],
   },
+  publications: {
+    sectionLabel: 'SCHREIBEN',
+    heading: 'Aktuelle',
+    headingAccent: 'Artikel',
+    readMoreLabel: 'Auf Medium lesen',
+    viewAllLabel: 'Alle Artikel auf Medium',
+    viewAllUrl: 'https://medium.com/@vikum.mail',
+  },
   testimonials: {
     sectionLabel: 'REFERENZEN',
     heading: 'Vertrauen von',
@@ -325,12 +335,67 @@ export const deContent: SiteContent = {
       { id: 'nav-4', label: 'Dienste', icon: 'services', sectionId: 'services' },
       { id: 'nav-5', label: 'Fähigkeiten', icon: 'skills', sectionId: 'skills' },
       { id: 'nav-6', label: 'Portfolio', icon: 'portfolio', sectionId: 'portfolio' },
+      { id: 'nav-7', label: 'Schreiben', icon: 'publications', sectionId: 'publications' },
     ],
   },
   theme: {
     toggleTheme: 'Thema wechseln',
     lightMode: 'Zu hellem Modus wechseln',
     darkMode: 'Zu dunklem Modus wechseln',
+  },
+  cookieBanner: {
+    message: 'Ich nutze Google Analytics, um zu sehen, welche Seiten gelesen werden. Dabei wird ein Cookie gesetzt. Wenn Sie ablehnen, funktioniert die Website genauso.',
+    acceptLabel: 'Erlauben',
+    declineLabel: 'Nein, danke',
+    privacyLinkLabel: 'Was dabei erfasst wird',
+    withdrawLabel: 'Cookie-Auswahl ändern',
+    withdrawDoneLabel: 'Gelöscht. Der Hinweis erscheint erneut.',
+  },
+  privacy: {
+    metaTitle: 'Datenschutz · Vikum Samaranayake',
+    metaDescription: 'Was diese Website erfasst, was nicht, und wie Sie mich dazu erreichen.',
+    backLabel: '← Zurück zur Website',
+    heading: 'Datenschutz',
+    lastUpdatedLabel: 'Zuletzt aktualisiert',
+    lastUpdated: '18. September 2026',
+    intro: [
+      'Dies ist mein persönliches Portfolio. Es gibt keine Konten, keine Anmeldung und nichts zu kaufen, also gibt es hier wenig zu sagen &mdash; was es aber zu sagen gibt, sage ich lieber klar, als es in Juristendeutsch zu verstecken.',
+    ],
+    sections: [
+      {
+        heading: 'Statistiken',
+        paragraphs: [
+          'Ich nutze Google Analytics, um zu sehen, wie viele Menschen vorbeikommen und welche Seiten sie lesen. So erfahre ich, ob die Arbeit, die ich in diese Website stecke, jemanden erreicht. Dabei werden zwei Cookies in Ihrem Browser gesetzt, <code>_ga</code> und <code>_ga_Z4XVZ5T2GG</code>. Sie laufen nach zwei Jahren ab und erkennen einen wiederholten Besuch, ohne zu wissen, wer Sie sind.',
+          'Ich erfasse außerdem, wenn jemand auf die Kontaktschaltfläche klickt, und auf welche der drei Schaltflächen. Das ist eine Zählung, keine Identität &mdash; ich kann nicht erkennen, welche Besucherin oder welcher Besucher geklickt hat.',
+          'Google verarbeitet diese Daten in meinem Auftrag und erhält dabei Ihre IP-Adresse und Angaben zu Ihrem Browser. Ich sehe Ihre IP-Adresse nie und verknüpfe nichts davon mit anderen Daten. Wenn Sie lieber nicht mitgezählt werden möchten: Jeder Werbe- oder Tracker-Blocker verhindert das, und die Website funktioniert genauso gut ohne.',
+        ],
+      },
+      {
+        heading: 'Kontakt aufnehmen',
+        paragraphs: [
+          'Die Kontaktschaltfläche öffnet Ihr E-Mail-Programm und sendet eine Nachricht direkt an <a href="mailto:{email}">{email}</a>. Diese E-Mail landet in meinem Postfach wie jede andere. Ich bewahre sie so lange auf, wie das Gespräch nützlich ist, setze Sie auf keine Verteilerliste und gebe sie an niemanden weiter.',
+        ],
+      },
+      {
+        heading: 'Was von anderswo geladen wird',
+        paragraphs: [
+          'Einige Bilder auf dieser Website stammen von meinem eigenen Asset-Server unter assets.vikum.dev, andere von Unsplash. Die GitHub-Beitragsgrafik nutzt Daten, die ich beim Erstellen der Website vorab abrufe, nicht während Sie lesen. Immer wenn Ihr Browser eine Datei vom Server eines anderen Unternehmens lädt, kann dieses Unternehmen Ihre IP-Adresse sehen &mdash; so funktioniert das Web, und das sollte man wissen.',
+          'Die Website selbst besteht aus statischen Dateien. Es gibt keine Datenbank und keinen Server von mir, der dahinter läuft.',
+        ],
+      },
+      {
+        heading: 'Ihre Rechte',
+        paragraphs: [
+          'Wenn Sie in der EU oder im Vereinigten Königreich leben, haben Sie das Recht zu erfahren, welche Daten Sie betreffen, deren Berichtigung oder Löschung zu verlangen und sich bei Ihrer nationalen Datenschutzbehörde zu beschweren. Praktisch heißt das: Haben Sie mir geschrieben, schreiben Sie mir noch einmal, und ich lösche den Verlauf. Haben Sie nur die Website gelesen, habe ich nichts, womit ich Sie identifizieren könnte.',
+        ],
+      },
+      {
+        heading: 'Änderungen',
+        paragraphs: [
+          'Ändert sich, was diese Website erfasst, aktualisiere ich diese Seite und das Datum oben. Fragen dazu sind unter der oben genannten Adresse willkommen.',
+        ],
+      },
+    ],
   },
   notFound: {
     title: 'Seite nicht gefunden',

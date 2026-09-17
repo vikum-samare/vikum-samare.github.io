@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { useRouter } from 'next/router';
 import { SiteContent } from '@/types';
 import { Sidebar } from './Sidebar';
 import { FloatingNav } from './FloatingNav';
@@ -12,17 +13,37 @@ interface LayoutProps {
 }
 
 export function Layout({ children, content }: LayoutProps) {
+  // Locale lives in the path, so that is what decides which privacy page the
+  // footer link points at.
+  const { pathname } = useRouter();
+  const localePrefix = pathname.startsWith('/nl')
+    ? '/nl'
+    : pathname.startsWith('/de')
+      ? '/de'
+      : '';
+  const privacyHref = `${localePrefix}/privacy`;
+
   return (
     <div className="min-h-screen bg-background-base overflow-x-hidden">
       <ThemeToggle labels={content.theme} />
       <MobileHeader profile={content.profile} navigation={content.navigation} />
       
       <div className="flex h-screen overflow-hidden">
-        <Sidebar profile={content.profile} />
+        <Sidebar
+          profile={content.profile}
+          privacyHref={privacyHref}
+          privacyLabel={content.privacy.heading}
+        />
         
-        <main className="flex-1 lg:ml-0 w-full overflow-y-auto hide-scrollbar">
+        {/* lg:pr-24 reserves the column the fixed nav rail sits in (40px icon
+            + 24px offset), so content never slides underneath it. */}
+        <main className="flex-1 lg:ml-0 w-full overflow-y-auto hide-scrollbar lg:pr-24">
           {/* Mobile Profile Card - Shows before content on mobile */}
-          <MobileProfileCard profile={content.profile} />
+          <MobileProfileCard
+            profile={content.profile}
+            privacyHref={privacyHref}
+            privacyLabel={content.privacy.heading}
+          />
           <div className="min-h-screen">
             {children}
           </div>

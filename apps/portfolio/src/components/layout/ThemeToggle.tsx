@@ -15,10 +15,9 @@ export function ThemeToggle({ labels }: ThemeToggleProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    const shouldBeDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
+    // Dark is the default: only an explicit 'light' choice turns it off, so a
+    // visitor whose OS is in light mode still sees the site as designed.
+    const shouldBeDark = localStorage.getItem('theme') !== 'light';
     setIsDark(shouldBeDark);
     
     if (shouldBeDark) {
@@ -58,9 +57,11 @@ export function ThemeToggle({ labels }: ThemeToggleProps) {
         'focus:outline-none focus:ring-2 focus:ring-accent-primary'
       )}
     >
-      <span className="animate-rotate-slow">
-        <Icons.Settings width={18} height={18} />
-      </span>
+      {isDark ? (
+        <Icons.Sun width={18} height={18} />
+      ) : (
+        <Icons.Moon width={18} height={18} />
+      )}
       
       <div className={clsx(
         'absolute left-12 top-1/2 -translate-y-1/2',

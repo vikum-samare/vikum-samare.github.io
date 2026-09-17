@@ -1,9 +1,13 @@
+import { trackCvDownload } from '@/lib/analytics';
+import Link from 'next/link';
 import { ProfileContent } from '@/types';
 import { Icons, Image } from '@/components/ui';
 import clsx from 'clsx';
 
 interface MobileProfileCardProps {
   readonly profile: ProfileContent;
+  readonly privacyHref: string;
+  readonly privacyLabel: string;
 }
 
 const socialIconMap = {
@@ -16,7 +20,11 @@ const socialIconMap = {
   stackoverflow: Icons.Stackoverflow,
 } as const;
 
-export function MobileProfileCard({ profile }: MobileProfileCardProps) {
+export function MobileProfileCard({
+  profile,
+  privacyHref,
+  privacyLabel,
+}: MobileProfileCardProps) {
   return (
     <div className="lg:hidden mobile-full-height flex flex-col pt-12 w-full">
       <div className="flex-1 flex flex-col items-center justify-evenly px-6 py-2 w-full mx-auto">
@@ -77,17 +85,26 @@ export function MobileProfileCard({ profile }: MobileProfileCardProps) {
           })}
         </div>
 
+        {profile.cvUrl && (
         <a
-          href="#contact"
+          href={profile.cvUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackCvDownload('mobile_profile')}
           className="btn-primary w-full max-w-sm text-lg py-3"
         >
-          <Icons.Mail width={20} height={20} />
-          {profile.hireButtonText}
+          <Icons.Attachment width={20} height={20} />
+          {profile.cvButtonText}
         </a>
+        )}
 
         <div className="flex flex-col items-center">
           <p className="text-sm text-text-muted text-center mb-3">
             {profile.copyright}
+            {' · '}
+            <Link href={privacyHref} className="hover:text-accent-primary transition-colors">
+              {privacyLabel}
+            </Link>
           </p>
           <div className="flex flex-col items-center animate-bounce">
             <span className="text-xs text-text-secondary mb-1 uppercase tracking-wider font-medium">

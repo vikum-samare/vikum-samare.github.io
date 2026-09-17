@@ -28,9 +28,7 @@ export default function Document() {
             __html: `
               (function() {
                 try {
-                  var savedTheme = localStorage.getItem('theme');
-                  var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                  if (localStorage.getItem('theme') !== 'light') {
                     document.documentElement.classList.add('dark');
                   }
                 } catch (e) {

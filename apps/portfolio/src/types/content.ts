@@ -24,6 +24,12 @@ export interface ProfileContent {
   readonly avatarUrl: string;
   readonly copyright: string;
   readonly hireButtonText: string;
+  /**
+   * Public CV, served from /public so the path is root-relative. Set to an
+   * empty string to hide the download button everywhere.
+   */
+  readonly cvUrl: string;
+  readonly cvButtonText: string;
   readonly socialLinks: readonly SocialLink[];
 }
 
@@ -118,6 +124,69 @@ export interface SkillsContent {
   readonly heading: string;
   readonly headingAccent: string;
   readonly skills: readonly SkillItem[];
+}
+
+/**
+ * A heading plus its body copy on the privacy page.
+ */
+export interface PrivacySection {
+  readonly heading: string;
+  /** One entry per paragraph; inline HTML allowed, `{email}` is substituted. */
+  readonly paragraphs: readonly string[];
+}
+
+/**
+ * Privacy page content.
+ */
+export interface PrivacyContent {
+  readonly metaTitle: string;
+  readonly metaDescription: string;
+  readonly backLabel: string;
+  readonly heading: string;
+  readonly lastUpdatedLabel: string;
+  readonly lastUpdated: string;
+  readonly intro: readonly string[];
+  readonly sections: readonly PrivacySection[];
+}
+
+/**
+ * Cookie consent banner.
+ */
+export interface CookieBannerContent {
+  readonly message: string;
+  readonly acceptLabel: string;
+  readonly declineLabel: string;
+  readonly privacyLinkLabel: string;
+  /** Link on the privacy page that reopens the choice. */
+  readonly withdrawLabel: string;
+  readonly withdrawDoneLabel: string;
+}
+
+/**
+ * One Medium article, fetched at build time by scripts/fetch-publications.mjs.
+ */
+export interface Publication {
+  readonly title: string;
+  readonly url: string;
+  readonly coverUrl: string;
+  readonly excerpt: string;
+  /** ISO date, e.g. 2026-09-14. */
+  readonly publishedAt: string;
+  readonly tags: readonly string[];
+}
+
+/**
+ * Publications section content. The articles themselves come from the fetched
+ * data file, not from here, so only the labels are translated.
+ */
+export interface PublicationsContent {
+  readonly sectionLabel: string;
+  readonly heading: string;
+  readonly headingAccent: string;
+  readonly readMoreLabel: string;
+  /** Link to the Medium profile, shown under the cards. */
+  readonly viewAllLabel: string;
+  readonly viewAllUrl: string;
 }
 
 /**
@@ -264,7 +333,7 @@ export interface ContributionsContent {
 export interface NavItem {
   readonly id: string;
   readonly label: string;
-  readonly icon: 'home' | 'about' | 'resume' | 'contributions' | 'services' | 'skills' | 'portfolio' | 'testimonials' | 'contact';
+  readonly icon: 'home' | 'about' | 'resume' | 'contributions' | 'services' | 'skills' | 'portfolio' | 'publications' | 'testimonials' | 'contact';
   readonly sectionId: string;
 }
 
@@ -312,10 +381,13 @@ export interface SiteContent {
   readonly services: ServicesContent;
   readonly skills: SkillsContent;
   readonly portfolio: PortfolioContent;
+  readonly publications: PublicationsContent;
   readonly testimonials: TestimonialsContent;
   readonly clients: ClientsContent;
   readonly contact: ContactContent;
   readonly navigation: NavigationContent;
   readonly theme: ThemeLabels;
   readonly notFound: NotFoundContent;
+  readonly privacy: PrivacyContent;
+  readonly cookieBanner: CookieBannerContent;
 }
