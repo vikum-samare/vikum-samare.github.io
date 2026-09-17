@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { NavigationContent } from '@/types';
-import { Icons } from '@/components/ui';
+import { Icons, trackSheen } from '@/components/ui';
 import clsx from 'clsx';
 
 interface FloatingNavProps {
@@ -60,10 +60,11 @@ export function FloatingNav({ navigation }: FloatingNavProps) {
             <div key={item.id} className="relative group">
               <button
                 onClick={() => scrollToSection(item.sectionId)}
+                onMouseMove={trackSheen}
                 aria-label={item.label}
                 className={clsx(
-                  'nav-icon-btn',
-                  isActive && 'active'
+                  'nav-icon-btn liquid-glass liquid-glass-interactive',
+                  isActive && 'active liquid-glass-accent'
                 )}
               >
                 <Icon width={18} height={18} />
@@ -72,7 +73,7 @@ export function FloatingNav({ navigation }: FloatingNavProps) {
               <div className={clsx(
                 'absolute right-12 top-1/2 -translate-y-1/2',
                 'px-3 py-1.5 rounded-md',
-                'bg-background-card border border-border',
+                'liquid-glass',
                 'text-sm text-text-primary whitespace-nowrap',
                 'opacity-0 invisible group-hover:opacity-100 group-hover:visible',
                 'transition-all duration-normal',

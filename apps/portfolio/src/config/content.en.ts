@@ -1,3 +1,4 @@
+import { project } from './project-media';
 import { SiteContent } from '@/types';
 
 export const enContent: SiteContent = {
@@ -186,54 +187,67 @@ export const enContent: SiteContent = {
     heading: 'Featured',
     headingAccent: 'Projects',
     projects: [
-      {
-        id: 'proj-1',
+      project('proj-1', {
         title: 'Endurep – Fitness Platform',
         category: 'Personal Project',
-        imageUrl: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop',
-        tags: ['NestJS', 'MongoDB', 'React Native', 'Kubernetes', 'RabbitMQ', 'GitHub Actions'],
-        link: '#',
-      },
-      {
-        id: 'proj-2',
+        subtitle: 'A training and nutrition platform for coaches and their clients',
+        description: [
+          'Endurep is a fitness platform built around a <strong>NestJS microservice backend</strong> and a React Native client. Coaches build programmes, assign them to clients, and track adherence in one place.',
+          'The services communicate over RabbitMQ and run on Kubernetes, with MongoDB as the primary store. Deployments ship through GitHub Actions on every merge to main.',
+          'Read more about the architecture on <a href="https://github.com/vikum-samare" target="_blank" rel="noopener noreferrer">GitHub</a>. The hardest part was keeping workout sessions consistent offline: the mobile client queues writes locally and reconciles them when connectivity returns.',
+        ],
+        linkLabel: 'Visit Endurep',
+      }),
+      project('proj-2', {
         title: 'Clyde & Co – Productivity App',
         category: 'Freelance',
-        imageUrl: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop',
-        tags: ['React Native', 'Node.js', 'AWS EC2'],
-        link: '#',
-      },
-      {
-        id: 'proj-3',
+        subtitle: 'Productivity and performance tracking for partners and internal staff',
+        description: [
+          'A productivity and performance tracking app for Clyde &amp; Co partners and internal employees, shipped on both Android and iOS from a single <strong>React Native</strong> codebase with Redux (thunk) for state.',
+          'I joined as a freelance mobile and middleware developer. I initiated and integrated the middleware layer &mdash; a Node.js service running on AWS EC2 &mdash; and owned its releases through to production.',
+          'Test builds went out through <strong>Microsoft App Center</strong>, and I ran the knowledge transfer sessions that handed the work over to the in-house team at the end of the engagement.',
+        ],
+      }),
+      project('proj-3', {
         title: 'PropertyGuru – Agent Marketplace',
         category: 'Proptech',
-        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
-        tags: ['NestJS', 'React', 'React Native', 'AWS', 'DynamoDB'],
-        link: '#',
-      },
-      {
-        id: 'proj-4',
-        title: 'Maybank – Revenue360 Dashboard',
+        subtitle: 'A marketplace connecting property agents with buyers',
+        description: [
+          'An agent marketplace for PropertyGuru, built on a <strong>NestJS</strong> backend with React on the web and React Native on mobile.',
+          'Runs on AWS with DynamoDB as the primary store.',
+        ],
+        linkLabel: 'Visit project',
+      }),
+      project('proj-4', {
+        title: 'Maybank2u – Digital Banking Platform',
         category: 'Fintech',
-        imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop',
-        tags: ['React Native', 'React', 'Node.js', 'REST API'],
-        link: '#',
-      },
-      {
-        id: 'proj-5',
+        subtitle: 'Web and mobile banking for Maybank Singapore',
+        description: [
+          'I joined the Maybank web app team as a <strong>frontend engineer working in React</strong>, where I delivered the permanent and temporary credit card limit increase module, along with the Wealth360 showcase module.',
+          'I then moved to the team building the new mobile banking app as a <strong>lead engineer</strong>, owning the Revenue360 and transaction modules &mdash; including foreign transactions and bill payments &mdash; and leading Wealth360 on mobile.',
+          'Alongside the delivery work I mentored junior developers, coordinated with an off-shore team, and reported progress to senior management. It was a year of shipping to tight deadlines in a regulated environment without letting quality slip.',
+        ],
+      }),
+      project('proj-5', {
         title: 'Incentivio – Web Ordering v2',
         category: 'Food Tech',
-        imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop',
-        tags: ['React', 'Node.js', 'AWS', 'Dwolla'],
-        link: '#',
-      },
-      {
-        id: 'proj-6',
+        subtitle: 'The second generation of a restaurant web ordering flow',
+        description: [
+          'A rebuild of Incentivio&rsquo;s web ordering experience in <strong>React</strong>, backed by Node.js services on AWS.',
+          'Payments run through Dwolla for bank-to-bank transfers.',
+        ],
+        linkLabel: 'Visit project',
+      }),
+      project('proj-6', {
         title: 'Noetic1 – Hospitality SaaS Platform',
         category: 'Hospitality Tech',
-        imageUrl: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop',
-        tags: ['React', 'React Native', 'Node.js', 'AWS', 'Docker', 'NGINX', 'Jenkins'],
-        link: '#',
-      },
+        subtitle: 'A multi-tenant SaaS platform for hospitality operators',
+        description: [
+          'Noetic1 is a hospitality SaaS platform with a <strong>React</strong> web app, a React Native mobile client and Node.js services behind it.',
+          'The stack is containerised with Docker, fronted by NGINX and deployed through Jenkins on AWS.',
+        ],
+        linkLabel: 'Visit project',
+      }),
     ],
   },
   testimonials: {

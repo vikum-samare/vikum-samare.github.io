@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ProfileContent, NavigationContent } from '@/types';
-import { Icons } from '@/components/ui';
+import { Icons, trackSheen } from '@/components/ui';
 import clsx from 'clsx';
 
 interface MobileHeaderProps {
@@ -91,11 +91,13 @@ export function MobileHeader({ profile, navigation }: MobileHeaderProps) {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.sectionId)}
+                  onMouseMove={trackSheen}
                   className={clsx(
+                    'liquid-glass liquid-glass-interactive',
                     'w-full flex items-center gap-4 px-4 py-3',
                     'text-left text-lg text-text-secondary',
-                    'rounded-xl transition-colors duration-normal',
-                    'hover:bg-state-hover hover:text-text-primary'
+                    'rounded-xl',
+                    'hover:text-text-primary'
                   )}
                 >
                   <Icon width={20} height={20} />
