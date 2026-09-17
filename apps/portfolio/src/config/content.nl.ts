@@ -1,3 +1,4 @@
+import { project } from './project-media';
 import { SiteContent } from '@/types';
 
 export const nlContent: SiteContent = {
@@ -186,54 +187,67 @@ export const nlContent: SiteContent = {
     heading: 'Uitgelichte',
     headingAccent: 'Projecten',
     projects: [
-      {
-        id: 'proj-1',
-        title: 'Endurep – Fitness Platform',
-        category: 'Personal Project',
-        imageUrl: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop',
-        tags: ['NestJS', 'MongoDB', 'React Native', 'Kubernetes', 'RabbitMQ', 'GitHub Actions'],
-        link: '#',
-      },
-      {
-        id: 'proj-2',
-        title: 'Clyde & Co – Productivity App',
+      project('proj-1', {
+        title: 'Endurep – Fitnessplatform',
+        category: 'Persoonlijk project',
+        subtitle: 'Een trainings- en voedingsplatform voor coaches en hun cliënten',
+        description: [
+          'Endurep is een fitnessplatform gebouwd rond een <strong>NestJS-microservicebackend</strong> en een React Native-client. Coaches stellen programma&rsquo;s samen, wijzen ze toe aan cliënten en volgen de opvolging op één plek.',
+          'De services communiceren via RabbitMQ en draaien op Kubernetes, met MongoDB als primaire opslag. Deployments verlopen via GitHub Actions bij elke merge naar main.',
+          'Lees meer over de architectuur op <a href="https://github.com/vikum-samare" target="_blank" rel="noopener noreferrer">GitHub</a>. Het lastigste was trainingssessies offline consistent houden: de mobiele client bewaart schrijfacties lokaal en synchroniseert zodra er weer verbinding is.',
+        ],
+        linkLabel: 'Bekijk Endurep',
+      }),
+      project('proj-2', {
+        title: 'Clyde & Co – Productiviteitsapp',
         category: 'Freelance',
-        imageUrl: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&h=600&fit=crop',
-        tags: ['React Native', 'React', 'Node.js', 'AWS EC2'],
-        link: '#',
-      },
-      {
-        id: 'proj-3',
-        title: 'PropertyGuru – Agent Marketplace',
+        subtitle: 'Productiviteit en prestaties volgen voor partners en medewerkers',
+        description: [
+          'Een app voor productiviteit en prestatiemonitoring voor partners en medewerkers van Clyde &amp; Co, uitgebracht op zowel Android als iOS vanuit één <strong>React Native</strong>-codebase met Redux (thunk) voor state.',
+          'Ik werkte hieraan als freelance mobile- en middlewareontwikkelaar. Ik zette de middlewarelaag op en integreerde die &mdash; een Node.js-service op AWS EC2 &mdash; en was verantwoordelijk voor de releases tot in productie.',
+          'Testbuilds gingen uit via <strong>Microsoft App Center</strong>, en ik verzorgde de kennisoverdrachtsessies waarmee het werk aan het interne team werd overgedragen.',
+        ],
+      }),
+      project('proj-3', {
+        title: 'PropertyGuru – Marktplaats voor makelaars',
         category: 'Proptech',
-        imageUrl: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop',
-        tags: ['NestJS', 'React', 'React Native', 'AWS', 'DynamoDB'],
-        link: '#',
-      },
-      {
-        id: 'proj-4',
-        title: 'Maybank – Revenue360 Dashboard',
+        subtitle: 'Een marktplaats die makelaars en kopers samenbrengt',
+        description: [
+          'Een marktplaats voor makelaars van PropertyGuru, gebouwd op een <strong>NestJS</strong>-backend met React op het web en React Native op mobiel.',
+          'Draait op AWS met DynamoDB als primaire opslag.',
+        ],
+        linkLabel: 'Bekijk project',
+      }),
+      project('proj-4', {
+        title: 'Maybank2u – Digitaal bankieren',
         category: 'Fintech',
-        imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop',
-        tags: ['React Native', 'React', 'Node.js', 'REST API'],
-        link: '#',
-      },
-      {
-        id: 'proj-5',
-        title: 'Incentivio – Web Ordering v2',
-        category: 'Food Tech',
-        imageUrl: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop',
-        tags: ['React', 'Node.js', 'AWS', 'Dwolla'],
-        link: '#',
-      },
-      {
-        id: 'proj-6',
-        title: 'Noetic1 – Hospitality SaaS Platform',
-        category: 'Hospitality Tech',
-        imageUrl: 'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop',
-        tags: ['React', 'React Native', 'Node.js', 'AWS', 'Docker', 'NGINX', 'Jenkins'],
-        link: '#',
-      },
+        subtitle: 'Web en mobiel bankieren voor Maybank Singapore',
+        description: [
+          'Ik begon bij het webteam van Maybank als <strong>frontendontwikkelaar met React</strong>, waar ik de module voor permanente en tijdelijke verhoging van de kredietlimiet opleverde, samen met de Wealth360-showcasemodule.',
+          'Daarna stapte ik over naar het team dat de nieuwe mobiele bankapp bouwde, als <strong>lead engineer</strong>. Daar was ik verantwoordelijk voor de Revenue360- en transactiemodules &mdash; inclusief buitenlandse transacties en factuurbetalingen &mdash; en leidde ik Wealth360 op mobiel.',
+          'Naast het ontwikkelwerk begeleidde ik junior ontwikkelaars, stemde ik af met een offshoreteam en rapporteerde ik de voortgang aan het management. Een jaar van opleveren onder strakke deadlines in een gereguleerde omgeving, zonder in te leveren op kwaliteit.',
+        ],
+      }),
+      project('proj-5', {
+        title: 'Incentivio – Online bestellen v2',
+        category: 'Food tech',
+        subtitle: 'De tweede generatie van een bestelplatform voor restaurants',
+        description: [
+          'Een herbouw van de online bestelervaring van Incentivio in <strong>React</strong>, ondersteund door Node.js-services op AWS.',
+          'Betalingen lopen via Dwolla voor overboekingen tussen bankrekeningen.',
+        ],
+        linkLabel: 'Bekijk project',
+      }),
+      project('proj-6', {
+        title: 'Noetic1 – SaaS-platform voor horeca',
+        category: 'Horecatechnologie',
+        subtitle: 'Een multi-tenant SaaS-platform voor horecaondernemers',
+        description: [
+          'Noetic1 is een SaaS-platform voor de horeca met een <strong>React</strong>-webapp, een React Native-app voor mobiel en Node.js-services daarachter.',
+          'De stack draait in Docker-containers achter NGINX en wordt via Jenkins op AWS uitgerold.',
+        ],
+        linkLabel: 'Bekijk project',
+      }),
     ],
   },
   testimonials: {

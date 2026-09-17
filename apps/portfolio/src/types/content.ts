@@ -130,6 +130,35 @@ export interface PortfolioProject {
   readonly imageUrl: string;
   readonly tags: readonly string[];
   readonly link?: string;
+  /** Optional expanded view content. Omit to keep the card non-clickable. */
+  readonly details?: PortfolioProjectDetails;
+}
+
+/**
+ * Expanded ("read more") content for a portfolio project.
+ */
+export interface PortfolioProjectDetails {
+  /** Cover image for the modal. Falls back to the card image. */
+  readonly coverUrl?: string;
+  /**
+   * How the cover fills its box. Use 'contain' for artwork with transparency
+   * or margins that must not be cropped; defaults to 'cover' for photos.
+   */
+  readonly coverFit?: 'cover' | 'contain';
+  readonly subtitle?: string;
+  /**
+   * One entry per paragraph. Inline HTML is allowed (<strong>, <em>, <a href>);
+   * this is authored config, so it is rendered without sanitising.
+   */
+  readonly description: readonly string[];
+  /** CDN urls (jpg/png/gif). */
+  readonly screenshots?: readonly PortfolioScreenshot[];
+  readonly linkLabel?: string;
+}
+
+export interface PortfolioScreenshot {
+  readonly url: string;
+  readonly caption?: string;
 }
 
 /**

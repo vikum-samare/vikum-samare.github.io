@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ResumeContent, ResumeItem, ResumeTimelineSection } from '@/types';
-import { SectionHeader, Icons } from '@/components/ui';
+import { SectionHeader, Icons, trackSheen } from '@/components/ui';
 
 interface ResumeSectionProps {
   readonly content: ResumeContent;
@@ -56,9 +56,14 @@ function CollapsibleSection({
               : 'bg-transparent border-text-muted group-hover:border-accent-primary'
           }`}
         />
-        <span className={`text-lg font-medium transition-colors duration-200 ${
-          isExpanded ? 'text-accent-primary' : 'text-text-secondary group-hover:text-accent-primary'
-        }`}>
+        <span
+          onMouseMove={trackSheen}
+          className={`liquid-glass liquid-glass-interactive rounded-full px-4 py-1.5 text-lg font-medium ${
+            isExpanded
+              ? 'liquid-glass-accent text-accent-primary'
+              : 'text-text-secondary group-hover:text-accent-primary'
+          }`}
+        >
           {section.label}
         </span>
       </button>
@@ -114,7 +119,7 @@ export function ResumeSection({ content }: ResumeSectionProps) {
   };
 
   return (
-    <section id="resume" className="py-20 px-6 lg:px-12">
+    <section id="resume" className="relative glass-ambient py-20 px-6 lg:px-12">
       <div className="max-w-4xl">
         <SectionHeader 
           label={content.sectionLabel} 

@@ -1,5 +1,5 @@
 import { ProfileContent } from '@/types';
-import { Icons, Image } from '@/components/ui';
+import { Icons, Image, trackSheen } from '@/components/ui';
 import clsx from 'clsx';
 
 interface SidebarProps {
@@ -18,8 +18,11 @@ const socialIconMap = {
 
 export function Sidebar({ profile }: SidebarProps) {
   return (
-    <aside className="w-sidebar shrink-0 h-full p-6 pt-20 hidden lg:block">
-      <div className="h-full bg-background-surface border border-border rounded-2xl p-6 flex flex-col">
+    <aside className="w-sidebar shrink-0 h-full p-6 pt-20 hidden lg:block glass-ambient relative">
+      <div
+        onMouseMove={trackSheen}
+        className="liquid-glass h-full rounded-2xl p-6 flex flex-col"
+      >
         <div className="flex items-start justify-between mb-6">
           <div className="flex items-center gap-2">
             <span className="text-xl font-semibold text-text-primary">{profile.name.split(' ')[0]}</span>
@@ -69,11 +72,13 @@ export function Sidebar({ profile }: SidebarProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
+                onMouseMove={trackSheen}
                 className={clsx(
-                  'w-10 h-10 rounded-full border border-border',
+                  'liquid-glass liquid-glass-interactive',
+                  'w-10 h-10 rounded-full',
                   'flex items-center justify-center',
-                  'text-text-secondary transition-all duration-normal',
-                  'hover:text-text-primary hover:border-text-primary'
+                  'text-text-secondary',
+                  'hover:text-text-primary'
                 )}
               >
                 <Icon width={18} height={18} />
@@ -85,7 +90,8 @@ export function Sidebar({ profile }: SidebarProps) {
         <div className="mt-auto">
           <a
             href="#contact"
-            className="btn-primary w-full"
+            onMouseMove={trackSheen}
+            className="liquid-glass liquid-glass-interactive liquid-glass-accent w-full inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded-full"
           >
             <Icons.Mail width={18} height={18} />
             {profile.hireButtonText}

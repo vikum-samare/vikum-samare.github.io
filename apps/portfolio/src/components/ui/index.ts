@@ -6,3 +6,4 @@ export { Image } from './Image';
 export { ContributionGrid } from './ContributionGrid';
 export { ContributionRadar } from './ContributionRadar';
 export { ContributionLegend } from './ContributionLegend';
+export { trackSheen } from './glass';
