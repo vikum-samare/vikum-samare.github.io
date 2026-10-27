@@ -258,7 +258,7 @@ export const enContent: SiteContent = {
     headingAccent: 'Articles',
     readMoreLabel: 'Read on Medium',
     viewAllLabel: 'All articles on Medium',
-    viewAllUrl: 'https://medium.com/@vikum.mail',
+    viewAllUrl: 'https://vikum-samare.medium.com',
   },
   testimonials: {
     sectionLabel: 'TESTIMONIALS',
