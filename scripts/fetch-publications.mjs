@@ -96,7 +96,11 @@ function parseFeed(xml) {
   const items = xml.match(/<item>[\s\S]*?<\/item>/g) ?? [];
 
   return items.map((item) => {
-    const body = tagValue(item, 'content:encoded');
+    // Member-only posts carry no content:encoded, just a short <description>
+    // with the cover image, a snippet and a "Continue reading" link.
+    const body =
+      tagValue(item, 'content:encoded') ||
+      tagValue(item, 'description').replace(/<p class="medium-feed-link">[\s\S]*?<\/p>/, '');
     const published = tagValue(item, 'pubDate');
     const categories = [...item.matchAll(/<category>([\s\S]*?)<\/category>/g)]
       .map((m) => unwrapCdata(m[1]))
