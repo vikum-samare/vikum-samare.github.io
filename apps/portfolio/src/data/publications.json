@@ -3,8 +3,8 @@
     {
       "title": "What OpenTelemetry Showed Me About Round Trips and Cold Connections on a Raspberry Pi Cluster",
       "url": "https://vikum-samare.medium.com/what-opentelemetry-showed-me-about-round-trips-and-cold-connections-on-a-raspberry-pi-cluster-fd0bd0cfa375",
-      "coverUrl": "",
-      "excerpt": "",
+      "coverUrl": "https://cdn-images-1.medium.com/max/1200/0*jCWDkBYc_OemNQFv",
+      "excerpt": "I Finally Read My OpenTelemetry Traces. My Code Was the Fast Part.",
       "publishedAt": "2026-10-27",
       "tags": [
         "kubernetes",
