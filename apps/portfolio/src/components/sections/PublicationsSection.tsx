@@ -85,7 +85,7 @@ function ArticleCard({
           </div>
         )}
 
-        <span className="mt-4 pt-1 text-sm text-accent-primary inline-flex items-center gap-1">
+        <span className="mt-auto pt-5 text-sm text-accent-primary inline-flex items-center gap-1">
           {content.readMoreLabel}
           <Icons.ChevronRight width={14} height={14} />
         </span>
